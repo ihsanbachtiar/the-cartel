@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #336;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            position: relative;
+            width: 150px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMUw4IDdMMTUgMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 10px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        select:hover {
+            background-color: #f0f0f0; /* Light gray background on hover */
+        }
+
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #004488;
+            background-color: #e8f0fe; /* Light blue background when focused */
+        }
+
+        option {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <select>
+        <option disabled selected>Select Size</option>
+        <option>Size S</option>
+        <option>Size M</option>
+        <option>Size L</option>
+        <option>Size XL</option>
+    </select>
+</body>
+</html>
