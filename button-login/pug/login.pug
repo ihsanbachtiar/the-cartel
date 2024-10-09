@@ -1,0 +1,38 @@
+doctype html
+html(lang="id")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Login Page
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #000000;
+      }
+      .login-button {
+        background-color: #344FFB;
+        color: white;
+        border: none;
+        padding: 60px 490px;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .login-button:hover {
+        background-color: #ffffff;
+        color: black;
+      }
+  body
+    .login-container
+      h2 Login
+      button.login-button(onclick="login()") Login
+    script.
+      function login() {
+        alert('Login button clicked');
+      }
