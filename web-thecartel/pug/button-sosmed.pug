@@ -46,17 +46,16 @@ html(lang="id")
       .button i {
         margin-right: 8px; /* Jarak antara ikon dan teks */
       }
+
+  
+  mixin socialButton(className, link, iconClass, label)
+    a(href=link, target="_blank")
+      button(class="button " + className)
+        i(class=iconClass)
+        |  #{label}
+
   body
     .social-buttons
-      a(href="https://www.instagram.com/username", target="_blank")
-        button.button.instagram
-          i.fab.fa-instagram
-          |  Instagram
-      a(href="https://twitter.com/username", target="_blank")
-        button.button.twitter
-          i.fab.fa-twitter
-          |  Twitter
-      a(href="https://www.youtube.com/channel/username", target="_blank")
-        button.button.youtube
-          i.fab.fa-youtube
-          |  YouTube
+      +socialButton('instagram', 'https://www.instagram.com/username', 'fab fa-instagram', 'Instagram')
+      +socialButton('twitter', 'https://twitter.com/username', 'fab fa-twitter', 'Twitter')
+      +socialButton('youtube', 'https://www.youtube.com/channel/username', 'fab fa-youtube', 'YouTube')

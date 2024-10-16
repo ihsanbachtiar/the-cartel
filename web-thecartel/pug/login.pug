@@ -28,10 +28,17 @@ html(lang="id")
         background-color: #ffffff;
         color: black;
       }
+
+  
+  mixin login(className, label)
+    button(class=className, onclick="login()")= label
+
   body
     .login-container
       h2 Login
-      button.login-button(onclick="login()") Login
+     
+      +login('login-button', 'Login')
+
     script.
       function login() {
         alert('Login button clicked');

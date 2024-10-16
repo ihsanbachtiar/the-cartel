@@ -25,5 +25,11 @@ html
         background-color: #A63939;
         color: #ffffff;
       }
+
+  
+  mixin back(className, label)
+    back(class=className)= label
+
   body
-    .button Back
+    
+    +back('button', 'Back')

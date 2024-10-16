@@ -49,10 +49,14 @@ html(lang="en")
         padding: 10px;
         font-size: 16px;
       }
-  body
+
+  
+  mixin dropdown(label, options)
     select
-      option(disabled selected) Select Size
-      option Size S
-      option Size M
-      option Size L
-      option Size XL
+      option(disabled selected) #{label}
+      each option in options
+        option= option
+
+  body
+    .dropdown-container
+      +dropdown('Select Size', ['Size S', 'Size M', 'Size L', 'Size XL'])
