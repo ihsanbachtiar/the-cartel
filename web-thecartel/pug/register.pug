@@ -6,33 +6,38 @@ html(lang="id")
     title Register Page
     style.
       body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          background-color: hsl(0, 0%, 0%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: hsl(0, 0%, 0%);
       }
       .register-button {
-          background-color: #344FFB;
-          color: white;
-          border: none;
-          padding: 15px 30px;
-          text-align: center;
-          font-size: 16px;
-          border-radius: 5px;
-          cursor: pointer;
+        background-color: #344FFB;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
       }
       .register-button:hover {
-          background-color: #ffffff;
-          color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
       }
+
+  
+  mixin registerButton(onclickAction, label)
+    button.register-button(onclick=onclickAction) 
+      | #{label}
+
   body
     .register-container
-      button.register-button(onclick="register()") Register
+      +registerButton('register()', 'Register')
 
     script.
       function register() {
-          alert('Register button clicked');
+        alert('Register button clicked');
       }
-

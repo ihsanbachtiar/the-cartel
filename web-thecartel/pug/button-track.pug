@@ -28,9 +28,15 @@ html(lang="id")
         background-color: #00ffaa;
         color: rgb(0, 0, 0);
       }
+
+ 
+  mixin trackButton(className, label, onClickFunction)
+    button(class=className, onclick=onClickFunction) 
+      | #{label}
+
   body
     .TRACK-container
-      button.TRACK-button(onclick="TRACK()") TRACK
+      +trackButton('TRACK-button', 'TRACK', 'TRACK()')
 
     script.
       function TRACK() {

@@ -3,7 +3,7 @@ html(lang="id")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Tombol Add
+    title Tombol Tambah
     style.
       .btn-add {
         background-color: blue; 
@@ -21,5 +21,11 @@ html(lang="id")
       .btn-add:hover {
         background-color: darkblue;
       }
+
+  
+  mixin add(className, label)
+    add(class=className)= label
+
   body
-    button.btn-add Add
+    
+    +add('btn-add', 'Tambah')
