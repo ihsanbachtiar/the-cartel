@@ -30,13 +30,14 @@ html(lang="id")
       }
 
   
-  mixin login(className, label)
-    button(class=className, onclick="login()")= label
+  mixin login(buttonClass, buttonText)
+    button(class=buttonClass)= buttonText
 
   body
     .login-container
       h2 Login
-     
+      
+      
       +login('login-button', 'Login')
 
     script.
