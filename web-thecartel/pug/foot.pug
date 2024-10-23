@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Footer Example
+    // Import Poppins font from Google Fonts
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap", rel="stylesheet")
+    style.
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      footer nav a {
+        color: white;
+        margin: 20px 15px;
+        text-decoration: none;
+      }
+
+      footer nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Align the text and links */
+      .footer-left {
+        text-align: left;
+      }
+
+      .footer-right {
+        text-align: right;
+      }
+  body
+    footer
+      .footer-left
+        p © 2024 The Cartel. All Rights Reserved.
+      .footer-right
+        nav
+          a(href="home.html") Home
+          a(href="shop.html") Shop
+          a(href="blog.html") Blog
+          a(href="about.html") About
