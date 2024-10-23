@@ -1,10 +1,21 @@
+//- Definisikan mixin untuk footer
+mixin footer()
+  footer
+    .footer-left
+      p © 2024 The Cartel. All Rights Reserved.
+    .footer-right
+      nav
+        a(href="home.html") Home
+        a(href="shop.html") Shop
+        a(href="blog.html") Blog
+        a(href="about.html") About
+
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Footer Example
-    // Import Poppins font from Google Fonts
     link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap", rel="stylesheet")
     style.
       body {
@@ -30,7 +41,6 @@ html(lang="en")
         text-decoration: underline;
       }
 
-      /* Align the text and links */
       .footer-left {
         text-align: left;
       }
@@ -39,12 +49,5 @@ html(lang="en")
         text-align: right;
       }
   body
-    footer
-      .footer-left
-        p © 2024 The Cartel. All Rights Reserved.
-      .footer-right
-        nav
-          a(href="home.html") Home
-          a(href="shop.html") Shop
-          a(href="blog.html") Blog
-          a(href="about.html") About
+    //- Memanggil mixin footer dengan cara yang benar
+    +footer
