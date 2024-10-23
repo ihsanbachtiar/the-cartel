@@ -1,11 +1,7 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .gradient-background {
-    height: 100%;
-    background: linear-gradient(to bottom, #0a2e42, #3a7ca5);
-  }
-  
+body {
+  background-color: blue; 
+  color: white; 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 20px; 
+}
