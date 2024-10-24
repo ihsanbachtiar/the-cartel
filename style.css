@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    min-height: 100vh; /* Set height penuh viewport */
+    background: linear-gradient(to bottom, #0e3b57, #2b7bbf); /* Background gradien */
+    padding: 20px;
+}
