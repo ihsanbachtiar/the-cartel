@@ -1,0 +1,105 @@
+extends _template.pug
+
+block konten
+    style.
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0; 
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+        .container {
+            display: flex;
+            flex: 1; 
+            width: 100%; 
+            margin: 0; 
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .image-section img {
+            max-width: 100%; 
+            height: auto; 
+        }
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff; 
+            margin: 0; 
+        }
+        .form-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff; 
+        }
+        .form-section p {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #fff; 
+        }
+        .form-section label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #fff; 
+        }
+        .form-section input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        // Gaya untuk tombol TRACK
+        .TRACK-button {
+            background-color: #3f3a3a;
+            color: #fff; // Ubah warna teks tombol ke putih
+            border: none;
+            padding: 20px; // Sesuaikan padding sesuai kebutuhan
+            text-align: center;
+            font-size: 20px; // Sesuaikan ukuran font sesuai kebutuhan
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .TRACK-button:hover {
+            background-color: #00ffaa;
+            color: rgb(0, 0, 0);
+        }
+
+    // Definisi mixin trackButton
+    mixin trackButton(className, label, onClickFunction)
+        button(class=className, onclick=onClickFunction) 
+            | #{label}
+
+    .container
+        .image-section
+            img(src="https://img.freepik.com/foto-gratis/personaje-anime-agua_23-2151080263.jpg?t=st=1729784949~exp=1729788549~hmac=f63474d4510cb2ec6b1e484c0d96d76602faac7cb3850d92a0d971012457380a&w=740", alt="A cartoon boy playing in water with a joyful expression, surrounded by splashes and water droplets.")
+        .form-section
+            h1 Track Order
+            p To track your order, please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.
+            label(for="order-id") Order ID
+            input#order-id(placeholder="found in your order confirmation email.", type="text")
+            label(for="billing-email") Billing email
+            input#billing-email(placeholder="Email used during checkout.", type="email")
+            // Menggunakan mixin untuk tombol "TRACK"
+            +trackButton('TRACK-button', 'TRACK', 'TRACK()')
+
+    script.
+        function TRACK() {
+            alert('TRACK button clicked');
+        }

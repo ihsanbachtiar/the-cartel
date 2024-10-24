@@ -17,7 +17,7 @@ html(lang="id")
         background-color: #3f3a3a;
         color: rgb(255, 255, 255);
         border: none;
-        padding: 36px 394px;
+        padding: 36px 394px; // Sesuaikan ukuran sesuai kebutuhan
         text-align: center;
         font-size: 20px;
         border-radius: 20px;
@@ -29,13 +29,14 @@ html(lang="id")
         color: rgb(0, 0, 0);
       }
 
- 
+  // Mixin trackButton didefinisikan di sini
   mixin trackButton(className, label, onClickFunction)
     button(class=className, onclick=onClickFunction) 
       | #{label}
 
   body
     .TRACK-container
+      // Memanggil mixin trackButton dengan parameter yang diperlukan
       +trackButton('TRACK-button', 'TRACK', 'TRACK()')
 
     script.
