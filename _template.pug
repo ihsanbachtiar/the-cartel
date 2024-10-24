@@ -4,14 +4,62 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        style.
+            body {
+                margin: ; 
+            }
+            .content {
+                padding: 50px ; 
+                margin: ; 
+                background-color: #3a7ca5;
+                color: white;
+                
+            }
+            h1 {
+                font-size: 5em; // Mengatur ukuran font untuk h1 (contoh: 3em)
+                color: white;   // Mengubah warna teks menjadi putih (opsional)
+                margin: 200px;
+                padding: 100px 800px; 
+            }
+            h2 {
+                font-size: 900px 500px; // Mengatur ukuran font untuk h1 (contoh: 3em)
+                color: white;   // Mengubah warna teks menjadi putih (opsional)
+                margin: 100px;
+                padding: ; 
+            }
+            p {
+                font-size: 1,50em; // Mengatur ukuran font untuk h1 (contoh: 3em)
+                color: white;   // Mengubah warna teks menjadi putih (opsional)
+                margin: 10px;
+                padding: ; 
+            }
           
     body
-   
-       block navbar
-          include web-thecartel/pug/navbar.pug   
-       block konten 
-         
-       block footer 
-          include web-thecartel/pug/footer.pug
- 
- 
+        block navbar
+            include web-thecartel/pug/navbar.pug   
+
+        block konten
+            .content                                     
+                h1 FAQ 
+
+                h2 1. What can we do for you with Figma?
+                p Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                p venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                p elementum semper nisi. Aenean vulputate eleifend tellus.
+                
+                h2 2. What is the standard size of business cards?
+                p Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                
+                h2 3. How can I reset my password?
+                p Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                p Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tempus. Donec vitae sapien
+                p ut libero faucibus.
+                
+                h2 4. What is your return policy?
+                p Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec 
+                p sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
+                p Fusce vulputate eleifend sapien.
+
+        block footer 
+            include web-thecartel/pug/footer.pug

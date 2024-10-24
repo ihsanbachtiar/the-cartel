@@ -1,4 +1,32 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title></head><body><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Navbar </title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/a076d05399.js">// for icons</script><style>* {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><style>body {
+    margin: 0; /* Hapus margin di body */
+    padding: 0; /* Hapus padding di body */
+}
+.content {
+    padding: 50px; 
+    margin: 0; /* Hapus margin untuk mengisi ruang secara penuh */
+    background-color: #3a7ca5;
+    color: white;
+}
+h1 {
+    font-size: 5em; /* Mengatur ukuran font untuk h1 */
+    color: white;   /* Mengubah warna teks menjadi putih */
+    margin: 0; /* Hapus margin untuk h1 */
+    padding: 20px 0; /* Tambahkan padding atas dan bawah */
+    text-align: center; /* Mengatur teks agar rata kanan */
+}
+h2 {
+    font-size: 2em; /* Ukuran font untuk h2 */
+    color: white;   /* Mengubah warna teks menjadi putih */
+    margin: 20px 0; /* Margin atas dan bawah untuk h2 */
+}
+p {
+    font-size: 1.5em; /* Ukuran font untuk p */
+    color: white;   /* Mengubah warna teks menjadi putih */
+    margin: 10px 0; /* Margin atas dan bawah untuk p */
+    padding: 0; /* Hapus padding untuk p */
+}
+</style></head><body><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Navbar </title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/a076d05399.js">// for icons</script><style>* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -67,7 +95,7 @@ nav {
 .icon:hover {
   color: #999;
 }
-</style></head><!-- Definisikan mixin untuk navbar--><body><nav> <div class="navbar"><div class="logo">TheCartel</div><ul class="nav-links"><li><a href="#">Home <i class="fas fa-home"></i></a></li><li><a href="#">Blog <i class="fas fa-pencil-alt"></i></a></li><li><a href="#">Shop <i class="fas fa-shopping-cart"></i></a></li><li><a href="#">About <i class="fas fa-info-circle"></i></a></li></ul><div class="icons"><a class="icon" href="#"><i class="fas fa-user"></i></a><a class="icon" href="#"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path></svg></a><a class="icon" href="#"><svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path></svg></a></div></div></nav></body></html><body></body><!DOCTYPE html><html><head><style>body {
+</style></head><!-- Definisikan mixin untuk navbar--><body><nav> <div class="navbar"><div class="logo">TheCartel</div><ul class="nav-links"><li><a href="#">Home <i class="fas fa-home"></i></a></li><li><a href="#">Blog <i class="fas fa-pencil-alt"></i></a></li><li><a href="#">Shop <i class="fas fa-shopping-cart"></i></a></li><li><a href="#">About <i class="fas fa-info-circle"></i></a></li></ul><div class="icons"><a class="icon" href="#"><i class="fas fa-user"></i></a><a class="icon" href="#"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path></svg></a><a class="icon" href="#"><svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path></svg></a></div></div></nav></body></html><div class="content">                                    <h1>FAQ </h1><h2>1. What can we do for you with Figma?</h2><p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,</p><p>venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus</p><p>elementum semper nisi. Aenean vulputate eleifend tellus.</p><h2>2. What is the standard size of business cards?</h2><p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p><p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p><h2>3. How can I reset my password?</h2><p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p><p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tempus. Donec vitae sapien</p><p>ut libero faucibus.</p><h2>4. What is your return policy?</h2><p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec </p><p>sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. </p><p>Fusce vulputate eleifend sapien.</p></div><!DOCTYPE html><html><head><style>body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
