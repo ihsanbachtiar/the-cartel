@@ -3,10 +3,10 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Navbar 
+    title Navbar
     link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="style.css")
-    script(src="https://kit.fontawesome.com/a076d05399.js") // for icons
+    script(src="https://kit.fontawesome.com/a076d05399.js")
     style.
       * {
         margin: 0;
@@ -20,13 +20,14 @@ html(lang="en")
       }
 
       nav {
-        background:#1D3E53;
+        background: #1D3E53;
         color: white;
         width: 100%;
         padding: 15px 20px;
       }
 
       .navbar {
+        position : fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -46,6 +47,7 @@ html(lang="en")
       }
 
       .nav-links li {
+        position: relative;
         display: inline-block;
       }
 
@@ -53,13 +55,38 @@ html(lang="en")
         color: white;
         text-decoration: none;
         font-weight: 500;
-        padding: 10px 15px; 
+        padding: 10px 15px;
         transition: background-color 0.3s ease;
       }
 
       .nav-links a:hover {
         background-color: #555;
         border-radius: 5px;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        background: #1D3E53;
+        list-style: none;
+        padding: 10px 0;
+        border-radius: 5px;
+        z-index: 1000;
+        top: 100%;
+        left: 0;
+      }
+
+      .nav-links li:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown li {
+        padding: 5px 15px;
+      }
+
+      .dropdown li a {
+        padding: 5px 15px;
+        white-space: nowrap;
       }
 
       .icons {
@@ -77,27 +104,43 @@ html(lang="en")
       .icon:hover {
         color: #999;
       }
-
-  // Definisikan mixin untuk navbar
-  mixin navbar()
-    nav 
+  body
+    nav
       .navbar
         .logo TheCartel
         ul.nav-links
-          li: a(href="#") Home <i class="fas fa-home"></i>
-          li: a(href="#") Blog <i class="fas fa-pencil-alt"></i>
-          li: a(href="#") Shop <i class="fas fa-shopping-cart"></i>
-          li: a(href="#") About <i class="fas fa-info-circle"></i>
+          li
+            a(href="#") Home <i class="fas fa-home"></i>
+            ul.dropdown
+              li: a(href="#") Contact
+              li: a(href="#") Team
+              li: a(href="#") Author list
+              li: a(href="#") Typography
+              li: a(href="#") Help
+          li
+            a(href="#") About <i class="fas fa-info-circle"></i>
+            ul.dropdown
+              li: a(href="#") FAQ
+              li: a(href="#") Track order
+              li: a(href="#") Wishlist
+              li: a(href="#") Special thanks
+              li: a(href="#") Check out
+              li: a(href="#") Table of content
+          li
+            a(href="#") Shop <i class="fas fa-shopping-cart"></i>
+            ul.dropdown
+              li: a(href="#") Single product
+              li: a(href="#") Hat
+              li: a(href="#") Men
+              li: a(href="#") Women
+              li: a(href="#") Shoes
+              li: a(href="#") Watch
         .icons
+          a.icon(href="#") <i class="fas fa-user"></i>
           a.icon(href="#")
-            i.fas.fa-user
-          a.icon(href="#")
-            svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16")
+            svg.bi.bi-person-circle(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")
               path(d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0")
               path(fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1")
           a.icon(href="#")
-            svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16")
+            svg.bi.bi-bag(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")
               path(d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z")
-
-  body
-    +navbar() // Memanggil mixin navbar
