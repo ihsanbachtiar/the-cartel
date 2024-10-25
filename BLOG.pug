@@ -2,7 +2,125 @@ extends _template.pug
 include web-thecartel/pug/button-sosmed.pug
 include web-thecartel/pug/trendingpost.pug
 include web-thecartel/pug/helpguides.pug
+
 block konten
   +socialButtons()
   +trendingPostSection()
   +ecommerceGuideSection()
+
+  // Tambahkan gaya untuk tulisan
+  style.
+    .title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+
+    .h1-title {
+      font-size: 36px;
+      margin-top: 100px;
+      margin-bottom: 10px;
+    }
+
+    .h2-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .h3-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .h4-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .h5-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .h6-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .h5-title-4 {
+      font-size: 22px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    .h6-title-4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .content {
+      padding-left: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .content-second,
+    .content-third,
+    .content-fourth,
+    .content-fifth {  
+      padding-left: 20px;
+    }
+
+    .p-content-1, .p-content-2, .p-content-3, .p-content-4, .p-content-5 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .content-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+  // Konten Pertama
+  div.content
+    h1.h1-title How to Start A Multivendor Marketplace 
+    h2.h2-title (The Complete Guide)
+    p.p-content-1 by The Cartel Team
+    p.p-content-1 1st April 2024
+    p.p-content-1 So you're thinking about starting a multivendor marketplace but not sure where to start?
+    p.p-content-1 That's completely understandable as it is a bit more complex than…
+
+  // Konten Kedua dan Ketiga dalam satu baris
+  div.content-row
+    div.content.content-second
+      h3.h3-title The 7 Best Shopify Invoice & Order Printer Apps 2024 
+      h4.h4-title (Tried & Tested)
+      p.p-content-2 by The Cartel Team
+      p.p-content-2 31st May 2024
+      p.p-content-2 One of the features that Shopify doesn't offer as standard is the ability to create,
+      p.p-content-2 send, and print invoices and if you want to do…
+
+    div.content.content-third
+      h5.h5-title The Best Ecommerce Platforms for 2024 
+      h6.h6-title (inc Pros and Cons)
+      p.p-content-3 by The Cartel Team
+      p.p-content-3 3rd May 2024
+      p.p-content-3 When you are starting an Ecommerce Business, one of the most daunting tasks is 
+      p.p-content-3 choosing which ecommerce platform is going to be the best option…
+
+  // Konten Keempat dengan posisi agak ke kanan
+  div.content-row  
+    div.content.content-fourth
+      h5.h5-title-4 Most Popular Ecommerce Platforms (2023 Stats)
+      h6.h6-title-4 by The Cartel Team
+      p.p-content-4 18th March 2024
+      p.p-content-4 Ecommerce is a booming industry, with global sales expected to reach $8.1 Billion 
+      p.p-content-4 by 2026 and this growth is being driven by the platforms behind…
+
+    // Konten Kelima di samping Konten Keempat
+    div.content.content-fifth
+      h5.h5-title-4 New Trends in Ecommerce for 2024
+      h6.h6-title-4 by The Cartel Team
+      p.p-content-5 25th April 2024
+      p.p-content-5 As ecommerce continues to evolve, several new trends are emerging that every 
+      p.p-content-5 business owner should be aware of to stay competitive in the market.
