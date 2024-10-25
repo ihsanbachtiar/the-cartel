@@ -1,0 +1,84 @@
+mixin trendingPostSection()
+  style.
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .trending-wrapper {
+      border: 1px solid white;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 450px;
+      position: fixed;
+      bottom: 400px;
+      right: 100px;
+      text-align: center;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .post {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 5px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .post:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang saat hover */
+      transform: scale(1.03); /* Skala sedikit lebih besar saat hover */
+    }
+    .post img {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+    .post-content {
+      max-width: 300px;
+    }
+    .post-content h3 {
+      font-size: 16px;
+      margin: 0 0 3px;
+      color: white;
+    }
+    .post-content p {
+      font-size: 12px;
+      margin: 3px 0;
+    }
+    .post-content .author {
+      font-size: 10px;
+      color: #CCCCCC;
+    }
+
+  .trending-wrapper
+    .title Trending Posts - The Cartel
+
+    .post
+      img(src="https://storage.googleapis.com/a1aa/image/0msMZdH65ur1FV28prw8Gi1irN8nB43OjTRHAr3qpkpyIk6E.jpg", alt="Exclusive Products")
+      .post-content
+        h3 Discover Exclusive Products
+        p Explore limited-edition items available only at The Cartel. Don't miss out on our trending collections.
+        p.author BY The Cartel Team
+
+    .post
+      img(src="https://storage.googleapis.com/a1aa/image/YLDKe6l0Ek2JeE5fEMBE0XADkGdy3dwFtvi0tgk66bZTGhUnA.jpg", alt="Partner Collaborations")
+      .post-content
+        h3 Featured Partner Collaborations
+        p Experience top-quality products from our trusted partners. Handpicked just for you.
+        p.author BY The Cartel Team
+
+    .post
+      img(src="https://storage.googleapis.com/a1aa/image/W64MlHyi7tI0JF8wppi2Six25A1f6J9ATfm9uv8FEVQHjQqTA.jpg", alt="Customer Highlights")
+      .post-content
+        h3 Customer Favorites
+        p See what our customers are raving about this week and find your next must-have.
+        p.author BY The Cartel Team

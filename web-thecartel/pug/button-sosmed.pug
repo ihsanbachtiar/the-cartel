@@ -1,61 +1,76 @@
-doctype html
-html(lang="id")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Tombol Media Sosial Vertikal
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
-    style.
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f4f4f4;
-      }
-      .social-buttons {
-        display: flex;
-        flex-direction: column; /* Menyusun tombol secara vertikal */
-        gap: 15px;
-      }
-      .button {
-        display: flex;
-        align-items: center;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        width: 150px; /* Lebar tombol agar konsisten */
-      }
-      .instagram {
-        background-color: #E1306C;
-      }
-      .twitter {
-        background-color: #1DA1F2;
-      }
-      .youtube {
-        background-color: #FF0000;
-      }
-      .button:hover {
-        opacity: 0.8;
-      }
-      .button i {
-        margin-right: 8px; /* Jarak antara ikon dan teks */
-      }
+mixin socialButtons()
+  style.
+    .social-buttons-wrapper {
+      border: 2px solid white; /* Garis putih di luar tombol */
+      padding: 20px; /* Jarak antara border dan tombol */
+      border-radius: 10px; /* Sudut yang membulat */
+      position: fixed; /* Memposisikan pembungkus secara tetap */
+      right: 225px; /* Posisi dari sisi kanan */
+      top: 600px; /* Jarak dari atas */
+      display: flex;
+      flex-direction: column; /* Menyusun tombol secara vertikal */
+      align-items: center; /* Menengahkan isi */
+      text-align: center;
+    }
 
-  
-  mixin socialButton(className, link, iconClass, label)
-    a(href=link, target="_blank")
-      button(class="button " + className)
-        i(class=iconClass)
-        |  #{label}
+    .social-buttons {
+      display: flex;
+      flex-direction: column; /* Menyusun tombol secara vertikal */
+      gap: 30px; /* Menambah jarak antar tombol */
+      margin-top: 15px; /* Jarak antara teks "Follow Us" dan tombol */
+    }
 
-  body
+    .follow-us-text {
+      font-size: 1.2em; /* Ukuran font */
+      color: white; /* Warna teks putih */
+      margin: 0; /* Menghilangkan margin default */
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border: 1px solid black; /* Border hitam di setiap tombol */
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      width: 150px; /* Lebar tombol */
+    }
+
+    .instagram {
+      background-color: #E1306C;
+    }
+
+    .twitter {
+      background-color: #1DA1F2;
+    }
+
+    .youtube {
+      background-color: #FF0000;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    .button i {
+      margin-right: 8px; /* Jarak antara ikon dan teks */
+    }
+
+    /* Menambahkan Font Awesome */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+  .social-buttons-wrapper
+    p.follow-us-text Follow Us
     .social-buttons
-      +socialButton('instagram', 'https://www.instagram.com/username', 'fab fa-instagram', 'Instagram')
-      +socialButton('twitter', 'https://twitter.com/username', 'fab fa-twitter', 'Twitter')
-      +socialButton('youtube', 'https://www.youtube.com/channel/username', 'fab fa-youtube', 'YouTube')
+      button(class="button instagram")
+        i(class="fab fa-instagram")
+        |  Instagram
+      button(class="button twitter")
+        i(class="fab fa-twitter")
+        |  Twitter
+      button(class="button youtube")
+        i(class="fab fa-youtube")
+        |  YouTube
