@@ -1,0 +1,83 @@
+extends _template.pug
+
+block konten
+    style.
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0; /* Background untuk body, bisa dihapus jika tidak diinginkan */
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Mengatur tinggi body ke 100vh */
+        }
+        .container {
+            display: flex;
+            flex: 1; /* Mengizinkan kontainer mengisi ruang yang tersedia */
+            width: 100%; /* Mengubah lebar menjadi 100% */
+            margin: 0; /* Menghapus margin untuk mengisi penuh */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* Memusatkan gambar */
+            align-items: center; /* Memusatkan gambar secara vertikal */
+        }
+        .image-section img {
+            max-width: 100%; /* Agar gambar responsif */
+            height: auto; /* Menjaga aspek rasio gambar */
+        }
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #333;
+            margin: 0; /* Menghapus margin */
+        }
+        .form-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .form-section p {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .form-section label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .form-section input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 14px;
+        }
+        .form-section button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background: #555;
+        }
+
+    .container
+        .image-section
+            img(src="https://storage.googleapis.com/a1aa/image/gpm6teVHDu0bEaGuWK9HfwdnOLQPLvbQq9kxraz1l6GjxAqTA.jpg", alt="A cartoon boy playing in water with a joyful expression, surrounded by splashes and water droplets.")
+        .form-section
+            h1 Track Order
+            p To track your order, please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.
+            label(for="order-id") Order ID
+            input#order-id(placeholder="found in your order confirmation email.", type="text")
+            label(for="billing-email") Billing email
+            input#billing-email(placeholder="Email used during checkout.", type="email")
+            button TRACK
