@@ -1,17 +1,107 @@
-vdoctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title TheCartel
+extends _template2.pug
 
-    body
-        block navbar
-            include web-thecartel/pug/navbar.pug
+block konten
+  style.
+    .team-section {
+      text-align: center;
+      color: white;
+      padding: 100px 20px 80px;
+      min-height: calc(100vh - 100px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        block konten
-            .content
-                h1 TEAM
+    .team-section h1 {
+      font-size: 4em;
+      font-weight: bold;
+      margin: 0;
+    }
 
-        block footer
-            include web-thecartel/pug/footer.pug
+    .team-section hr {
+      width: 120px;
+      border: 1px solid #fff;
+      margin: 20px auto;
+    }
+
+    .team-section .subtitle {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      gap: 300px;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      margin-top: 120px;
+      transition: all 0.3s ease;
+    }
+
+    .team-member .role {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+  script.
+    // JavaScript untuk mengganti gambar saat hover
+    document.addEventListener('DOMContentLoaded', function() {
+      const members = document.querySelectorAll('.team-member img');
+      
+      members[0].addEventListener('mouseenter', function() {
+        this.dataset.original = this.src;
+        this.src = 'Property 1=Hover (2).jpg'; // Gambar hover untuk Designer
+      });
+      members[0].addEventListener('mouseleave', function() {
+        this.src = this.dataset.original;
+      });
+
+      members[1].addEventListener('mouseenter', function() {
+        this.dataset.original = this.src;
+        this.src = 'Property 1=Variant2.jpg'; // Gambar hover untuk Programmer
+      });
+      members[1].addEventListener('mouseleave', function() {
+        this.src = this.dataset.original;
+      });
+
+      members[2].addEventListener('mouseenter', function() {
+        this.dataset.original = this.src;
+        this.src = 'Rectangle 10 (1).jpg'; // Gambar hover untuk Analyst
+      });
+      members[2].addEventListener('mouseleave', function() {
+        this.src = this.dataset.original;
+      });
+    });
+
+  .team-section
+    h1 TEAM
+    hr
+
+    p.subtitle
+      | MEET OUR CREATIVE
+      br
+      | VISIONARIES AND INNOVATORS
+
+    .team-grid
+      .team-member
+        img(src="Property 1=Default (2).jpg" alt="Designer")
+        p.role "“DESIGNER”"
+      .team-member
+        img(src="Property 1=Default.jpg" alt="Programmer")
+        p.role "“PROGRAMMER”"
+      .team-member
+        img(src="Property 1=Default (3).jpg" alt="Analyst")
+        p.role "“ANALYST”"
