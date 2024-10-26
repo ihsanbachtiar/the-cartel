@@ -1,0 +1,42 @@
+extends _template2.pug
+include web-thecartel/pug/cshop1.pug
+include web-thecartel/pug/cshop2.pug
+include web-thecartel/pug/cshop3.pug
+include web-thecartel/pug/cshop4.pug
+include web-thecartel/pug/cshop5.pug
+include web-thecartel/pug/cshop6.pug
+include web-thecartel/pug/cshop7.pug
+include web-thecartel/pug/cshop8.pug
+include web-thecartel/pug/cshop9.pug
+include web-thecartel/pug/cshop10.pug
+
+block konten
+  // Judul di atas
+  div(style="text-align: center; padding: 50px 0;") 
+    h2(style="font-size: 48px; color: white;") Men 
+
+  // Container untuk baris pertama
+  div(style="display: flex; justify-content: center; padding: 20px 0;")
+    div(style="margin: 10px 20px;") 
+      +shop
+    div(style="margin: 10px 20px;") 
+      +shop2
+    div(style="margin: 10px 20px;") 
+      +shop3
+    div(style="margin: 10px 20px;")
+      +shop4
+    div(style="margin: 10px 20px;")
+      +shop5
+
+  
+  div(style="display: flex; justify-content: center; padding: 20px 0;")
+    div(style="margin: 10px 20px;") 
+      +shop6
+    div(style="margin: 10px 20px;") 
+      +shop7
+    div(style="margin: 10px 20px;") 
+      +shop8
+    div(style="margin: 10px 20px;") 
+      +shop9
+    div(style="margin: 10px 20px;") 
+      +shop10
