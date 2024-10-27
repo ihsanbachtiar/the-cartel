@@ -1,0 +1,111 @@
+mixin akun
+  style.
+    .container {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        padding: 200px 20px 20px; // padding atas ditambah untuk jarak lebih jauh dari navbar
+        box-sizing: border-box;
+        color: #fff;
+        gap: 40px;
+        align-items: center;
+        margin-left: 300px; // Menambahkan margin kiri untuk memindahkan ke kanan
+    }
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+    .image-icon {
+        border-radius: 25px;
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        margin-left: -40px;
+        margin-bottom: 20px;
+    }
+    .form-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        margin-bottom: 50px; // Mengurangi margin top untuk memindahkan ke atas
+    }
+    .create-account {
+        font-size: 36px;
+        margin-bottom: 20px; // Menyesuaikan margin bawah
+        text-align: center;
+    }
+    .form-group {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-box {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        color: #333;
+        font-size: 16px;
+    }
+    .register-button {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        background-color: #344ffb;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+    .register-button:hover {
+        background-color: #2a3ecb;
+    }
+    .extra-content {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+  
+  .container
+    .image-container
+      img.image-icon(alt="User Avatar" src="web-thecartel/image/image (11).jpg")
+    
+    .form-container
+      h1.create-account Create Account
+
+      .form-group
+        label(for="first-name") First Name
+        input#first-name.input-box(type="text" placeholder="Enter your first name")
+
+      .form-group
+        label(for="last-name") Last Name
+        input#last-name.input-box(type="text" placeholder="Enter your last name")
+
+      .form-group
+        label(for="email") Email Address
+        input#email.input-box(type="email" placeholder="Enter your email")
+
+      .form-group
+        label(for="password") Password
+        input#password.input-box(type="password" placeholder="Enter your password")
+
+      .register-button Register
+      
+      .extra-content
+        p Sudah punya akun? 
+        a(href="/login") Masuk di sini
+        p Atau daftar dengan
+        a(href="/google-auth") Google
+        |  atau  
+        a(href="/facebook-auth") Facebook
