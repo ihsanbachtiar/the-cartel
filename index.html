@@ -120,7 +120,7 @@
             <li><a href="#">Home <i class="fas fa-home"></i></a>
               <ul class="dropdown">
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="./_team.html">Team</a></li>
                 <li><a href="#">Author list</a></li>
                 <li><a href="#">Typography</a></li>
                 <li><a href="#">Help</a></li>
@@ -135,7 +135,7 @@
             </li>
             <li><a href="#">About <i class="fas fa-info-circle"></i></a>
               <ul class="dropdown">
-                <li><a href="../_faq.html">FAQ</a></li>
+                <li><a href="./_faq.html">FAQ</a></li>
                 <li><a href="#">Track order</a></li>
                 <li><a href="#">Wishlist</a></li>
                 <li><a href="#">Special thanks</a></li>
@@ -147,7 +147,7 @@
               <ul class="dropdown">
                 <li><a href="#">Single product</a></li>
                 <li><a href="#">Hat</a></li>
-                <li><a href="#">Men</a></li>
+                <li><a href="./_shop.html">Men</a></li>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Shoes</a></li>
                 <li><a href="#">Watch</a></li>
@@ -166,6 +166,133 @@
       </body>
     </html>
     <div class="content-wrapper">
+      <style>
+        /* CSS Styles */
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          font-family: 'Poppins', sans-serif;
+          line-height: normal;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          min-height: 100vh;
+          background-color: #f4f4f4; /* Menambahkan warna latar belakang */
+        }
+        
+        .frame-parent {
+          position: relative;
+          width: 100%;
+          max-width: 1440px;
+          text-align: left;
+          color: #fff;
+          padding: 20px; /* Menambahkan padding untuk menjaga jarak dari tepi */
+        }
+        
+        .twitterx-parent {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap; /* Memungkinkan ikon untuk berbaris dengan baik */
+          margin-bottom: 30px; /* Menambahkan jarak antara bagian atas dan konten */
+        }
+        
+        .twitterx-icon {
+          width: 55px;
+          height: 55px; /* Mengubah tinggi agar konsisten */
+          object-fit: cover;
+        }
+        
+        .rectangle-divv {
+          filter: blur(10px); /* Mengurangi efek blur */
+          background: conic-gradient(from 180deg at 50% 50%, #254b62 -9.27deg, #9eb1bb 58.17deg, #99adb7 162.39deg, #476d7c 277.94deg, #254b62 350.73deg, #9eb1bb 418.17deg);
+          height: 596px;
+          position: relative;
+          margin-bottom: 40px; /* Menambahkan jarak di bawah bagian ini */
+        }
+        
+        .the {
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          font-size: 96px;
+          background: linear-gradient(180deg, #999 9.5%, #fff 86.5%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .cartel {
+          position: absolute;
+          top: 110px;
+          left: 20px;
+          font-size: 96px;
+          background: linear-gradient(180deg, #2581f7 42.67%, #164c91 74.96%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .fashion-on-a-container, .emerging-technology-trends-container {
+          margin: 20px 0;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        
+        .fashion-on-a-budget-trendy-ti1 {
+          color: inherit;
+          text-decoration: underline;
+        }
+        
+        .image-57-icon, .image-58-icon {
+          width: 251px;
+          height: 228px;
+          object-fit: cover;
+        }
+        
+        .unlimited-shopping-find {
+          font-size: 32px;
+          font-weight: 500;
+          background: linear-gradient(90deg, #fff, #999 37.5%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          margin: 20px 0;
+        }
+        
+        /* Mengatur tata letak gambar dan teks */
+        .content-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+        }
+        
+        .text-container {
+          flex: 1; /* Membuat teks mengambil ruang tersisa */
+          margin: 0 20px; /* Memberikan margin di sisi kiri dan kanan */
+        }
+        
+      </style>
+      <div class="frame-parent">
+        <div class="twitterx-parent"><img class="twitterx-icon" alt="Twitter" src="web-thecartel/image/TwitterX.png"><img class="twitterx-icon" alt="TikTok" src="web-thecartel/image/TikTok.png"><img class="twitterx-icon" alt="YouTube" src="web-thecartel/image/YouTube.png"><img class="twitterx-icon" alt="LinkedIn" src="web-thecartel/image/LinkedIn.png"><img class="twitterx-icon" alt="Instagram" src="web-thecartel/image/Instagram.png"><img class="twitterx-icon" alt="Facebook" src="web-thecartel/image/Facebook.png"></div>
+        <div class="rectangle-divv"><b class="the">THE</b><b class="cartel">CARTEL</b></div>
+        <div class="fashion-on-a-container">
+          <p class="fashion-on-a-budget-trendy-ti"><a class="fashion-on-a-budget-trendy-ti1" href="https://elisen-theme.jkdevstudio.com/fashion-on-a-budget-trendy-tips/" target="_blank"><span class="fashion-on-a">Fashion on a Budget: Trendy Tips</span></a></p>
+          <p class="fashion-on-a-budget-trendy-ti">Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis...</p>
+        </div>
+        <div class="emerging-technology-trends-container">
+          <p class="fashion-on-a-budget-trendy-ti"><a class="fashion-on-a-budget-trendy-ti1" href="https://elisen-theme.jkdevstudio.com/emerging-technology-trends-to-watch/" target="_blank"><span class="fashion-on-a">Emerging Technology Trends to Watch</span></a></p>
+          <p class="fashion-on-a-budget-trendy-ti">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque...</p>
+        </div>
+        <div class="content-container"><img class="image-57-icon" alt="Image 57" src="web-thecartel/image/image 57.png">
+          <div class="text-container">
+            <div class="unlimited-shopping-find">"Unlimited Shopping, Find It All!"</div><img class="image-58-icon" alt="Image 58" src="web-thecartel/image/image 58.png">
+          </div>
+        </div>
+      </div>
     </div><!DOCTYPE html>
     <html>
       <head>
