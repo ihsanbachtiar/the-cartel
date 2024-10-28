@@ -1,0 +1,82 @@
+mixin about
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1, width=device-width")
+    style.
+      /* Gaya CSS langsung di dalam file Pug */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .desktop-11 {
+        position: relative; /* Mengubah menjadi relative untuk memudahkan penataan elemen */
+        width: 100%; /* Memastikan lebar penuh */
+        max-width: 1440px; /* Batasi lebar maksimum */
+        margin: 0 auto; /* Mengatur agar berada di tengah */
+        padding: 20px 0; /* Menambahkan padding untuk memberi ruang di atas dan bawah */
+      }
+
+      .about {
+        text-align: center; /* Menengahkan teks */
+        font-size: 96px;
+        color: #1d3e53; /* Sesuaikan warna teks */
+        margin-bottom: 20px; /* Menambahkan margin bawah agar tidak terlalu dekat dengan elemen lainnya */
+      }
+
+      .professional-problem-solutions-container {
+        font-size: 20px;
+        display: inline-block;
+        width: 826px;
+        margin: 20px auto; /* Menempatkan di tengah dengan margin */
+        text-align: left; /* Kembali ke teks rata kiri untuk konten */
+      }
+
+      .image-container {
+        display: flex; /* Menggunakan flexbox untuk menempatkan gambar */
+        justify-content: center; /* Menjajarkan gambar ke tengah */
+        margin: 20px 0; /* Margin untuk jarak antara gambar */
+      }
+
+      .image-icon, .image-icon1, .image-icon2 {
+        width: 265px;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 0 10px; /* Margin samping untuk memberi jarak antar gambar */
+      }
+
+      .image-icon2 {
+        width: 578px;
+        height: 260px; /* Mengatur ukuran gambar ketiga */
+      }
+
+      .desktop-11-child {
+        margin-top: 20px; /* Menambahkan jarak atas */
+        border-top: 5px solid #fff; /* Jika Anda ingin batasan atas */
+        width: 100%; /* Memastikan lebar penuh */
+      }
+
+  body
+    .desktop-11
+      .about About
+
+      .professional-problem-solutions-container
+        p.professional-problem-solutions Professional Problem Solutions For Digital Products
+        p.professional-problem-solutions Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus et ultrices posuere cubilia Curae; In ac dui quis mi consect.
+        
+        ul.innovation-trends-cybersecur
+          li.innovation-trends Innovation & Trends
+          li.innovation-trends Cybersecurity Insights
+          li.innovation-trends Mindfulness & Wellness
+          li.innovation-trends Nutrition Tips
+
+        p.professional-problem-solutions Designing a website involves various elements such as layout, graphics, content. We offer a variety of pricing packages to meet the unique needs of our services. Contact us today!
+
+      .image-container
+        img.image-icon(src="/web-thecartel/image/image (1).png", alt="")
+        img.image-icon2(src="/web-thecartel/image/image2.jpg", alt="")
+        img.image-icon1(src="/web-thecartel/image/image (2).png", alt="")
+
+      .desktop-11-child
