@@ -1,1 +1,167 @@
 extends _template.pug
+
+block konten
+  style.
+    .twitterx-icon {
+      width: 55px;
+      position: relative;
+      height: 77px;
+      object-fit: cover;
+    }
+    .twitterx-parent {
+      position: absolute;
+      top: 891px;
+      left: 155px;
+      width: 1215px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 170px;
+    }
+    .the {
+      position: absolute;
+      top: 76px;
+      left: 200px;
+      display: inline-block;
+      background: linear-gradient(180deg, #999 9.5%, #fff 86.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 188px;
+      height: 125px;
+    }
+    .cartel {
+      position: absolute;
+      top: 175px;
+      left: 358px;
+      background: linear-gradient(180deg, #2581f7 42.67%, #164c91 74.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .frame-child {
+      position: absolute;
+      top: 56px;
+      left: 748px;
+      filter: blur(190px);
+      background: conic-gradient(from 180deg at 50% 50%, #254b62 -9.27deg, #9eb1bb 58.17deg, #99adb7 162.39deg, #476d7c 277.94deg, #254b62 350.73deg, #9eb1bb 418.17deg);
+      width: 692px;
+      height: 596px;
+    }
+    .frame-item {
+      position: absolute;
+      top: 255px;
+      left: 812px;
+      width: 509px;
+      height: 540px;
+    }
+    .frame-inner {
+      position: absolute;
+      top: 49px;
+      left: 807px;
+      width: 585px;
+      height: 589px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .rectangle-icon {
+      position: absolute;
+      top: 442px;
+      left: 44px;
+      width: 1469px;
+      height: 518px;
+    }
+    .fashion-on-a {
+      text-decoration: underline;
+    }
+    .fashion-on-a-budget-trendy-ti1 {
+      color: inherit;
+    }
+    .fashion-on-a-budget-trendy-ti {
+      margin: 0;
+    }
+    .fashion-on-a-container {
+      position: absolute;
+      top: 701px;
+      left: 139px;
+      font-size: 20px;
+      font-weight: 500;
+      display: inline-block;
+      width: 960px;
+      height: 125px;
+    }
+    .emerging-technology-trends-container {
+      position: absolute;
+      top: 474px;
+      left: 396px;
+      font-size: 20px;
+      font-weight: 500;
+      display: inline-block;
+      width: 792px;
+      height: 90px;
+    }
+    .image-57-icon {
+      position: absolute;
+      top: 609px;
+      left: 1123px;
+      width: 251px;
+      height: 228px;
+      object-fit: cover;
+    }
+    .unlimited-shopping-find {
+      position: absolute;
+      top: 319px;
+      left: 160px;
+      font-size: 32px;
+      font-weight: 500;
+      background: linear-gradient(90deg, #fff, #999 37.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      width: 537px;
+    }
+    .image-58-icon {
+      position: absolute;
+      top: 405px;
+      left: 91px;
+      width: 251px;
+      height: 228px;
+      object-fit: cover;
+    }
+    .frame-parent {
+      width: 100%;
+      position: relative;
+      height: 968px;
+      text-align: left;
+      font-size: 96px;
+      color: #fff;
+      font-family: Poppins;
+    }
+
+  .frame-parent
+    .twitterx-parent
+      img.twitterx-icon(src="TwitterX.png" alt="")
+      img.twitterx-icon(src="TikTok.png" alt="")
+      img.twitterx-icon(src="YouTube.png" alt="")
+      img.twitterx-icon(src="LinkedIn.png" alt="")
+      img.twitterx-icon(src="Instagram.png" alt="")
+      img.twitterx-icon(src="Facebook.png" alt="")
+    b.the THE
+    b.cartel CARTEL
+    .frame-child
+    .frame-item
+    img.frame-inner(src="Frame 51.png" alt="")
+    img.rectangle-icon(src="Rectangle 65.svg" alt="")
+    .fashion-on-a-container
+      p.fashion-on-a-budget-trendy-ti
+        a.fashion-on-a-budget-trendy-ti1(href="https://elisen-theme.jkdevstudio.com/fashion-on-a-budget-trendy-tips/" target="_blank")
+          span.fashion-on-a Fashion on a Budget: Trendy Tips
+      p.fashion-on-a-budget-trendy-ti Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse feugiat. Suspendisse enim turpis, dictum sed, iaculis...
+    .emerging-technology-trends-container
+      p.fashion-on-a-budget-trendy-ti
+        a.fashion-on-a-budget-trendy-ti1(href="https://elisen-theme.jkdevstudio.com/emerging-technology-trends-to-watch/" target="_blank")
+          span.fashion-on-a Emerging Technology Trends to Watch
+      p.fashion-on-a-budget-trendy-ti Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque...
+    img.image-57-icon(src="image 57.png" alt="")
+    .unlimited-shopping-find "Unlimited Shopping, Find It All!"
+    img.image-58-icon(src="web-thecartel/image/image 58.png" alt="")
