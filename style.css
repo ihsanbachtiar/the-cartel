@@ -5,7 +5,7 @@ body {
 }
 
 .content-wrapper {
-    min-height: 150vh; /* Minimal tinggi 200vh */
+    min-height: 300vh; /* Minimal tinggi 200vh */
     height: auto; /* Atur tinggi otomatis untuk konten */
     background: linear-gradient(to bottom, #0e3b57, #2b7bbf); /* Latar belakang gradien */
     padding: 20px;
