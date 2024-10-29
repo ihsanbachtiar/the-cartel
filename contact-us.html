@@ -1,407 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheCartel</title>
-    <link rel="stylesheet" href="/kedua.css">
-  </head>
-  <body><!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navbar</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <style>
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-          
-          body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-          }
-          
-          nav {
-            background: #1D3E53;
-            color: white;
-            width: 100%;
-            padding: 15px 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-          
-          .logo {
-            font-size: 24px;
-            font-weight: 600;
-          }
-          
-          .nav-links {
-            list-style-type: none;
-            display: flex;
-            gap: 20px;
-            margin-right: 20px;
-          }
-          
-          .nav-links li {
-            position: relative;
-            display: inline-block;
-          }
-          
-          .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 15px;
-            transition: background-color 0.3s ease;
-          }
-          
-          .nav-links a:hover {
-            background-color: #555;
-            border-radius: 5px;
-          }
-          
-          .dropdown {
-            display: none;
-            position: absolute;
-            background: #1D3E53;
-            list-style: none;
-            padding: 10px 0;
-            border-radius: 5px;
-            z-index: 1000;
-            top: 100%;
-            left: 0;
-          }
-          
-          .nav-links li:hover .dropdown {
-            display: block;
-          }
-          
-          .dropdown li {
-            padding: 5px 15px;
-          }
-          
-          .dropdown li a {
-            padding: 5px 15px;
-            white-space: nowrap;
-          }
-          
-          .icons {
-            display: flex;
-            gap: 15px;
-          }
-          
-          .icon {
-            color: white;
-            font-size: 18px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-          }
-          
-          .icon:hover {
-            color: #999;
-          }
-        </style>
-      </head>
-      <body>
-        <nav>
-          <div class="logo">TheCartel</div>
-          <ul class="nav-links">
-            <li><a href="./index.html">Home <i class="fas fa-home"></i></a>
-              <ul class="dropdown">
-                <li><a href="./contact-us.html">Contact</a></li>
-                <li><a href="./_team.html">Team</a></li>
-                <li><a href="#">Author list</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">Help</a></li>
-              </ul>
-            </li>
-            <li><a href="BLOG.html">Blog <i class="fas fa-blog"></i>  <!-- Added Blog Menu Item --></a>
-              <ul class="dropdown">
-                <li><a href="#">Latest Posts</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Archives</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About <i class="fas fa-info-circle"></i></a>
-              <ul class="dropdown">
-                <li><a href="./_faq.html">FAQ</a></li>
-                <li><a href="./_trackorder.html">Track order</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="./_spesialthanks.html">Special thanks</a></li>
-                <li><a href="#">Check out</a></li>
-                <li><a href="#">Table of content</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Shop <i class="fas fa-shopping-cart"></i></a>
-              <ul class="dropdown">
-                <li><a href="#">Single product</a></li>
-                <li><a href="#">Hat</a></li>
-                <li><a href="./_shop.html">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Watch</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="icons"><a class="icon" href="_login.html"><i class="fas fa-user"></i></a><a class="icon" href="_login.html">
-              <svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
-              </svg></a><a class="icon" href="./createaccount.html">
-              <svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path>
-              </svg></a></div>
-        </nav>
-      </body>
-    </html>
-    <div class="content-wrapper">
-      <div class="contact-us">
-        <div class="contact-us1">Contact Us</div>
-        <div class="ask-how-we-container">
-          <p class="ask-how-we">Ask how we can help you:</p>
-          <p class="ask-how-we">
-            See our platform in action
-            Request a personalized demo of TUNE’s partner marketing platform.
-          </p>
-          <p class="ask-how-we">
-            Master performance marketing
-            From The Cartel to industry research and insight, learn how to grow your business through performance-based partnerships.
-          </p>
-          <p class="ask-how-we">
-            Explore life at TUNE
-            Search open positions, read about company culture and values, and explore our charitable initiatives.
-          </p>
-          <p class="ask-how-we">Points of Contact</p>
-          <p class="ask-how-we">
-            U.S. | The Cartel
-            11350 McCormick Rd, EP III, Suite 200, Hunt Valley, MD 21031
-          </p>
-          <p class="ask-how-we">Billing Inquiries (855) 979-7887</p>
-          <p class="ask-how-we">Rayyan Asysazili@Gmail.com</p>
-          <p class="ask-how-we">Information and Sales<a class="partnermarketingthecartelcom" href="mailto:partnermarketing@tune.com" target="_blank"><span class="partnermarketingthecartelcom1">partnermarketing@TheCartel.com</span></a></p>
-          <p class="ask-how-we">Support<a class="partnermarketingthecartelcom" href="mailto:support@tune.com" target="_blank"><span class="partnermarketingthecartelcom1">support@TheCartel.com</span></a></p>
-          <p class="ask-how-we">Verification of Employment</p>
-          <p class="ask-how-we"><a class="partnermarketingthecartelcom" href="mailto:voe@constellationhbs.com" target="_blank"><span class="partnermarketingthecartelcom1">voe@TheCartel.com</span></a></p>
-        </div>
-        <div class="contac-us">
-          <div class="contac-us-child"></div>
-          <div class="first-name">First name</div>
-        </div>
-        <div class="contac-us1">
-          <div class="contac-us-child"></div>
-          <div class="first-name">Last name</div>
-        </div>
-        <div class="contac-us2">
-          <div class="contac-us-child"></div>
-          <div class="first-name">Account Name</div>
-        </div>
-        <div class="contac-us3">
-          <div class="contac-us-child"></div>
-          <div class="first-name">Email</div>
-        </div>
-        <div class="contac-us4">
-          <div class="contac-us-child"></div>
-          <div class="first-name">Comments</div>
-        </div>
-        <div class="send-massage">
-          <div class="send-massage-child"></div>
-          <div class="send-massage1">send massage</div>
-        </div><img class="contact-us-child" alt="" src="web-thecartel/image/Rectangle 82.png"/>
-        <div class="contact-us-item"></div><img class="businessman-checking-his-task" alt="" src="web-thecartel/image/Businessman checking his task list.png"/>
-      </div>
-      <style>
-        .contact-us1 {
-          position: absolute;
-          top: 124px;
-          left: calc(50% - 272px);
-          font-size: 96px;
-          font-weight: 600;
-          display: inline-block;
-          width: 545px;
-          height: 130px;
-        }
-        .ask-how-we {
-          margin: 0;
-        }
-        .partnermarketingthecartelcom1 {
-          text-decoration: underline;
-        }
-        .partnermarketingthecartelcom {
-          color: inherit;
-        }
-        .ask-how-we-container {
-          position: absolute;
-          top: 354px;
-          left: 300px;
-          font-size: 14px;
-          font-weight: 600;
-          display: inline-block;
-          width: 594px;
-          height: 471px;
-        }
-        .contac-us-child {
-          position: absolute;
-          top: 28px;
-          left: 0px;
-          border-radius: 10px;
-          background-color: #fff;
-          width: 354px;
-          height: 47px;
-        }
-        .first-name {
-          position: absolute;
-          top: 0px;
-          left: 6px;
-          display: inline-block;
-          width: 171px;
-          height: 38px;
-        }
-        .contac-us {
-          position: absolute;
-          top: 299px;
-          left: 1200px;
-          width: 354px;
-          height: 75px;
-        }
-        .contac-us1 {
-          position: absolute;
-          top: 390px;
-          left: 1200px;
-          width: 354px;
-          height: 75px;
-        }
-        .contac-us2 {
-          position: absolute;
-          top: 481px;
-          left: 1200px;
-          width: 354px;
-          height: 75px;
-        }
-        .contac-us3 {
-          position: absolute;
-          top: 572px;
-          left: 1200px;
-          width: 354px;
-          height: 75px;
-        }
-        .contac-us4 {
-          position: absolute;
-          top: 663px;
-          left: 1200px;
-          width: 354px;
-          height: 75px;
-        }
-        .send-massage-child {
-          position: absolute;
-          top: 0px;
-          left: 350px;
-          border-radius: 20px;
-          background-color: #fff;
-          width: 320px;
-          height: 48px;
-        }
-        .send-massage1 {
-          position: absolute;
-          top: 9px;
-          left: 430px;
-          display: inline-block;
-          width: 161px;
-          height: 30px;
-        }
-        .send-massage {
-          position: absolute;
-          top: 761px;
-          left: 862px;
-          width: 320px;
-          height: 48px;
-          color: #254b62;
-        }
-        .contact-us-child {
-          position: absolute;
-          top: 621px;
-          left: 800px;
-          width: 349px;
-          height: 219px;
-          object-fit: cover;
-        }
-        .contact-us-item {
-          position: absolute;
-          top: 680px;
-          left: 800px;
-          width: 139px;
-          height: 97px;
-        }
-        .businessman-checking-his-task {
-          position: absolute;
-          top: 523px;
-          left: 800px;
-          width: 332px;
-          height: 324px;
-          object-fit: cover;
-        }
-        .contact-us {
-          width: 100%;
-          position: relative;
-          height: 1024px;
-          overflow: hidden;
-          text-align: left;
-          font-size: 20px;
-          color: #fff;
-          font-family: Poppins;
-        }
-      </style>
-    </div><!DOCTYPE html>
-    <html>
-      <head>
-        <style>
-          body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-          }
-          .footer {
-            background-color:#1D3E53 ;
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-          }
-          .footer .copyright {
-            font-size: 14px;
-          }
-          .footer .nav {
-            display: flex;
-            gap: 20px;
-          }
-          .footer .nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 16px;
-          }
-          
-        </style>
-      </head>
-      <body>
-            <div class="footer">
-              <div class="copyright">Copyright © 2024. All Right Reserved.</div>
-              <div class="nav"><a class="active" href="#">home</a><a href="#">Blog</a><a href="#">Shop</a><a href="#">About</a></div>
-            </div>
-      </body>
-    </html>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TheCartel</title><link rel="stylesheet" href="/kedua.css"></head><body><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Navbar</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/a076d05399.js"></script><style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background: #1D3E53;
+  color: white;
+  width: 100%;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #1D3E53;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 5px 15px;
+}
+
+.dropdown li a {
+  padding: 5px 15px;
+  white-space: nowrap;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #999;
+}</style></head><body><nav><div class="logo">TheCartel</div><ul class="nav-links"><li><a href="./index.html">Home </a><ul class="dropdown"><li><a href="./contact-us.html">Contact</a></li><li><a href="./_team.html">Team</a></li><li><a href="#">Author list</a></li><li><a href="#">Typography</a></li><li><a href="#">Help</a></li></ul></li><li><a href="BLOG.html">Blog </a><ul class="dropdown"><li><a href="#">Latest Posts</a></li><li><a href="#">Categories</a></li><li><a href="#">Archives</a></li></ul></li><li><a href="./_about.html">About </a><ul class="dropdown"><li><a href="./_faq.html">FAQ</a></li><li><a href="./_trackorder.html">Track order</a></li><li><a href="#">Wishlist</a></li><li><a href="./_spesialthanks.html">Special thanks</a></li><li><a href="#">Check out</a></li><li><a href="#">Table of content</a></li></ul></li><li><a href="#">Shop </a><ul class="dropdown"><li><a href="#">Single product</a></li><li><a href="#">Hat</a></li><li><a href="./_shop.html">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Shoes</a></li><li><a href="#">Watch</a></li></ul></li></ul><div class="icons"><a class="icon" href="_login.html"> </a><a class="icon" href="_login.html"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path></svg></a><a class="icon" href="./createaccount.html"><svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path></svg></a></div></nav></body></html><div class="content-wrapper"><div class="contact-us"><div class="contact-us1">Contact Us</div><div class="ask-how-we-container"><p class="ask-how-we">Ask how we can help you:</p><p class="ask-how-we">See our platform in action
+Request a personalized demo of TUNE’s partner marketing platform.</p><p class="ask-how-we">Master performance marketing
+From The Cartel to industry research and insight, learn how to grow your business through performance-based partnerships.</p><p class="ask-how-we">Explore life at TUNE
+Search open positions, read about company culture and values, and explore our charitable initiatives.</p><p class="ask-how-we">Points of Contact</p><p class="ask-how-we">U.S. | The Cartel
+11350 McCormick Rd, EP III, Suite 200, Hunt Valley, MD 21031</p><p class="ask-how-we">Billing Inquiries (855) 979-7887</p><p class="ask-how-we">Rayyan Asysazili@Gmail.com</p><p class="ask-how-we">Information and Sales<a class="partnermarketingthecartelcom" href="mailto:partnermarketing@tune.com" target="_blank"><span class="partnermarketingthecartelcom1">partnermarketing@TheCartel.com</span></a></p><p class="ask-how-we">Support<a class="partnermarketingthecartelcom" href="mailto:support@tune.com" target="_blank"><span class="partnermarketingthecartelcom1">support@TheCartel.com</span></a></p><p class="ask-how-we">Verification of Employment</p><p class="ask-how-we"><a class="partnermarketingthecartelcom" href="mailto:voe@constellationhbs.com" target="_blank"><span class="partnermarketingthecartelcom1">voe@TheCartel.com</span></a></p></div><div class="contac-us"><div class="contac-us-child"></div><div class="first-name">First name</div></div><div class="contac-us1"><div class="contac-us-child"></div><div class="first-name">Last name</div></div><div class="contac-us2"><div class="contac-us-child"></div><div class="first-name">Account Name</div></div><div class="contac-us3"><div class="contac-us-child"></div><div class="first-name">Email</div></div><div class="contac-us4"><div class="contac-us-child"></div><div class="first-name">Comments</div></div><div class="send-massage"><div class="send-massage-child"></div><div class="send-massage1">send massage</div></div><img class="contact-us-child" alt="" src="web-thecartel/image/Rectangle 82.png"/><div class="contact-us-item"></div><img class="businessman-checking-his-task" alt="" src="web-thecartel/image/Businessman checking his task list.png"/></div><style>.contact-us1 {
+  position: absolute;
+  top: 124px;
+  left: calc(50% - 272px);
+  font-size: 96px;
+  font-weight: 600;
+  display: inline-block;
+  width: 545px;
+  height: 130px;
+}
+.ask-how-we {
+  margin: 0;
+}
+.partnermarketingthecartelcom1 {
+  text-decoration: underline;
+}
+.partnermarketingthecartelcom {
+  color: inherit;
+}
+.ask-how-we-container {
+  position: absolute;
+  top: 354px;
+  left: 300px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  width: 594px;
+  height: 471px;
+}
+.contac-us-child {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 354px;
+  height: 47px;
+}
+.first-name {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  display: inline-block;
+  width: 171px;
+  height: 38px;
+}
+.contac-us {
+  position: absolute;
+  top: 299px;
+  left: 1200px;
+  width: 354px;
+  height: 75px;
+}
+.contac-us1 {
+  position: absolute;
+  top: 390px;
+  left: 1200px;
+  width: 354px;
+  height: 75px;
+}
+.contac-us2 {
+  position: absolute;
+  top: 481px;
+  left: 1200px;
+  width: 354px;
+  height: 75px;
+}
+.contac-us3 {
+  position: absolute;
+  top: 572px;
+  left: 1200px;
+  width: 354px;
+  height: 75px;
+}
+.contac-us4 {
+  position: absolute;
+  top: 663px;
+  left: 1200px;
+  width: 354px;
+  height: 75px;
+}
+.send-massage-child {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 320px;
+  height: 48px;
+}
+.send-massage1 {
+  position: absolute;
+  top: 9px;
+  left: 430px;
+  display: inline-block;
+  width: 161px;
+  height: 30px;
+}
+.send-massage {
+  position: absolute;
+  top: 761px;
+  left: 862px;
+  width: 320px;
+  height: 48px;
+  color: #254b62;
+}
+.contact-us-child {
+  position: absolute;
+  top: 621px;
+  left: 800px;
+  width: 349px;
+  height: 219px;
+  object-fit: cover;
+}
+.contact-us-item {
+  position: absolute;
+  top: 680px;
+  left: 800px;
+  width: 139px;
+  height: 97px;
+}
+.businessman-checking-his-task {
+  position: absolute;
+  top: 523px;
+  left: 800px;
+  width: 332px;
+  height: 324px;
+  object-fit: cover;
+}
+.contact-us {
+  width: 100%;
+  position: relative;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+  font-family: Poppins;
+}</style></div><!DOCTYPE html><html><head><style>body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  background-color:#1D3E53 ;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer .copyright {
+  font-size: 14px;
+}
+.footer .nav {
+  display: flex;
+  gap: 20px;
+}
+.footer .nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+</style></head><body><div class="footer"><div class="copyright">Copyright © 2024. All Right Reserved.</div><div class="nav"><a class="active" href="#">home</a><a href="#">Blog</a><a href="#">Shop</a><a href="#">About</a></div></div></body></html></body></html>
