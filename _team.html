@@ -169,141 +169,107 @@
           </body>
         </html>
         <style>
-          .akun {
-            position: absolute;
-            top: 321px;
-            left: 452px;
-            width: 24px;
-            height: 24px;
-            overflow: hidden;
-          }
-          .image-akun {
-            width: 448px;
-            position: relative;
-            border-radius: 25px;
-            overflow: hidden;
-            height: 511px;
-            object-fit: cover;
-            right: 0px;
-            top: 40px;
-          }
-          .contac-us-child {
-            position: relative;
-            top: 108px;
-            left: 547px;
-            border-radius: 10px;
-            background-color: #fff;
-            width: 270px;
-            height: 38px;
-          }
-          .first-name {
-            position: relative;
-            top: 39px;
-            left: 548px;
-            display: inline-block;
-            width: 171px;
-            height: 38px;
-          
-          }
-          .contac-us {
-            position: absolute;
-            top: 110px;
-            left: 63px;
-            width: 354px;
-            height: 75px;
-          }
-          .contac-us1 {
-            position: absolute;
-            top: 210px;
-            left: 63px;
-            width: 354px;
-            height: 75px;
-          }
-          .contac-us2 {
-            position: absolute;
-            top: 310px;
-            left: 63px;
-            width: 354px;
-            height: 75px;
-          }
-          .contac-us3 {
-            position: absolute;
-            top: 410px;
-            left: 63px;
-            width: 354px;
-            height: 75px;
-          }
-          .register1 {
-            position: relative;
-            bottom: 10px;
-          }
-          .register-wrapper {
-            position: absolute;
-            top: 8px;
-            left: calc(50% - 43px);
+          .team-section {
+            text-align: center;
+            color: white;
+            padding: 100px 20px 80px;
+            min-height: calc(100vh - 100px);
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .team-section h1 {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 0;
+          }
+          
+          .team-section hr {
+            width: 120px;
+            border: 1px solid #fff;
+            margin: 20px auto;
+          }
+          
+          .team-section .subtitle {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 50px;
+          }
+          
+          .team-grid {
+            display: flex;
             justify-content: center;
-            padding: 10px;
+            gap: 100px;
           }
-          .register {
-            position: absolute;
-            top: 563px;
-            left: 626px;
-            border-radius: 20px;
-            background-color: #344ffb;
-            width: 244px;
-            height: 38px;
-            overflow: hidden;
-            font-size: 16px;
+          
+          .team-member {
+            text-align: center;
           }
-          .create-account {
-            position: relative;
-            top: 138px;
-            left: 530px;
-            font-size: 25px;
-            display: inline-block;
-            width: 312px;
-            height: 56px;
+          
+          .team-member img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            margin-top: 120px;
+            transition: all 0.3s ease;
           }
-          .contanerakun {
-            width: 100%;
-            position: relative;
-            height: 607px; // Tinggi lebih kecil
-            text-align: left;
-            font-size: 20px;
-            color: #fff;
-            font-family: 'Poppins', sans-serif;
-            top: 12px;
-            left: 146px;
+          
+          .team-member .role {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
           }
           
         </style>
-        <div class="contanerakun">
-          <div class="akun"></div>
-          <div class="contac-us">
-            <div class="contac-us-child"></div>
-            <div class="first-name">First name</div>
-          </div>
-          <div class="contac-us1">
-            <div class="contac-us-child"></div>
-            <div class="first-name">Last name</div>
-          </div>
-          <div class="contac-us2">
-            <div class="contac-us-child"></div>
-            <div class="first-name">Email Address</div>
-          </div>
-          <div class="contac-us3">
-            <div class="contac-us-child"></div>
-            <div class="first-name">Password</div>
-          </div>
-          <div class="register">
-            <div class="register-wrapper">
-              <div class="register1">Register</div>
+        <script>
+          // JavaScript untuk mengganti gambar saat hover
+          document.addEventListener('DOMContentLoaded', function() {
+            const members = document.querySelectorAll('.team-member img');
+            
+            members[0].addEventListener('mouseenter', function() {
+              this.dataset.original = this.src;
+              this.src = 'web-thecartel/image/Rectangle 10.jpg'; // Gambar hover untuk Designer
+            });
+            members[0].addEventListener('mouseleave', function() {
+              this.src = this.dataset.original;
+            });
+          
+            members[1].addEventListener('mouseenter', function() {
+              this.dataset.original = this.src;
+              this.src = 'web-thecartel/image/Property 1=Variant2.jpg'; // Gambar hover untuk Programmer
+            });
+            members[1].addEventListener('mouseleave', function() {
+              this.src = this.dataset.original;
+            });
+          
+            members[2].addEventListener('mouseenter', function() {
+              this.dataset.original = this.src;
+              this.src = 'web-thecartel/image/Rectangle 10 (1).jpg'; // Gambar hover untuk Analyst
+            });
+            members[2].addEventListener('mouseleave', function() {
+              this.src = this.dataset.original;
+            });
+          });
+          
+        </script>
+        <div class="team-section">
+          <h1>TEAM</h1>
+          <hr/>
+          <p class="subtitle">MEET OUR CREATIVE<br/>VISIONARIES AND INNOVATORS</p>
+          <div class="team-grid">
+            <div class="team-member"><img src="web-thecartel/image/Property 1=Default (2).jpg" alt="Designer"/>
+              <p class="role">"“DESIGNER”"</p>
             </div>
-          </div><b class="create-account">Create Account</b>
-          <div class="image-akun"><img class="image-akun" alt="" src="web-thecartel/image/image (16).png"/></div>
+            <div class="team-member"><img src="web-thecartel/image/Property 1=Default.jpg" alt="Programmer"/>
+              <p class="role">"“PROGRAMMER”"</p>
+            </div>
+            <div class="team-member"><img src="web-thecartel/image/Property 1=Default (3).jpg" alt="Analyst"/>
+              <p class="role">"“ANALYST”"</p>
+            </div>
+          </div>
         </div><!DOCTYPE html>
         <html>
           <head>
