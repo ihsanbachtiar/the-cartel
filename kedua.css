@@ -1,13 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Memastikan tinggi body dan html memenuhi layar */
-    overflow: hidden; /* Mencegah scroll di seluruh halaman */
+    height: 100%;
+    overflow: hidden;
 }
 
 .content-wrapper {
-    min-height: 100vh; /* Setinggi 100vh untuk memenuhi layar */
-    background: linear-gradient(to bottom, #0e3b57, #2b7bbf); /* Latar belakang gradien */
+    min-height: 100vh; 
+    background: linear-gradient(to bottom, #0e3b57, #2b7bbf);
     padding: 20px;
-    box-sizing: border-box; /* Agar padding tidak menambah tinggi */
+    box-sizing: border-box; 
 }
