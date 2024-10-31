@@ -1,18 +1,17 @@
-/* Container Flex */
+
 .container-homepage {
     margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%; /* Lebar penuh untuk container */
+    width: 100%;
 }
 
 .container-homepage-content {
     display: flex;
     flex-wrap: wrap;
-    width: 100%; /* Lebar penuh untuk container */
+    width: 100%; 
 }
 
-/* Kolom kiri dan kanan */
 .column {
     padding: 20px;
     box-sizing: border-box;
@@ -41,7 +40,7 @@
     }
 
     .column-content {
-        flex: 0 0 50%; /* Mengatur lebar kolom ke 50% */
+        flex: 0 0 50%;
         max-width: 50%;
     }
 }
@@ -121,4 +120,6 @@
 .absolute-content {
     position: absolute;
 }
+  
+
 

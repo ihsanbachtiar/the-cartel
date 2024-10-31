@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    height: auto; /* Biarkan tinggi otomatis */
+    height: auto;
 }
 
 .content-wrapper {
-    min-height: 200vh; /* Minimal tinggi 200vh */
-    height: auto; /* Atur tinggi otomatis untuk konten */
-    background: linear-gradient(to bottom, #0e3b57, #2b7bbf); /* Latar belakang gradien */
+    min-height: 200vh;
+    height: auto;
+    background: linear-gradient(to bottom, #0e3b57, #2b7bbf);
     padding: 20px;
 }
 
@@ -17,24 +17,17 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-
-    background: linear-gradient(to bottom, #0e3b57, #2b7bbf); /* Latar belakang gradien */
-
-    color: #333; /* Warna teks default */
-
-    /* Font yang umum digunakan di body */
+    background: linear-gradient(to bottom, #0e3b57, #2b7bbf);
+    color: #333;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-
-    /* Flexbox untuk membuat konten tengah */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* CSS dasar untuk .container */
 .container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 1rem);
