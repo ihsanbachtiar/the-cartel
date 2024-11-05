@@ -65,6 +65,7 @@
     overflow: hidden;
     object-fit: cover;
     margin-left: 100px;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
 }
 
 
