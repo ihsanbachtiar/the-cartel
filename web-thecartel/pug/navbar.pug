@@ -64,8 +64,19 @@ html(lang="en")
         padding: 10px 15px;
         transition: background-color 0.3s ease;
       }
+      .nav-links b {
+        color: #1555D1;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+      }
 
       .nav-links a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+      .nav-links b:hover {
         background-color: #555;
         border-radius: 5px;
       }
@@ -116,7 +127,7 @@ html(lang="en")
       div 
         ul.nav-links
           li
-            a(href="./index.html") Home 
+            b(href="./index.html") Home 
             ul.dropdown
               li: a(href="./contactus.html") Contact
               li: a(href="./_team.html") Team
