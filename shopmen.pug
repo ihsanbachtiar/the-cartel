@@ -1,8 +1,16 @@
 extends _template.pug
-include web-thecartel/pug/men.pug
+include web-thecartel/pug/shop7.pug
 include web-thecartel/pug/button-loadmore.pug
 include web-thecartel/pug/tulisanmen.pug
 block konten
-  +men
+  +7([
+  { value: '$77', image: 'web-thecartel/image/image.jpg' },
+  { value: '$66', image: 'web-thecartel/image/image (2).jpg' },
+  { value: '$34', image: 'web-thecartel/image/image (4).jpg' },
+  { value: '$23', image: 'web-thecartel/image/image (5).jpg' },
+  { value: '$99', image: 'web-thecartel/image/image (6).jpg' },
+  { value: '$67', image: 'web-thecartel/image/image (1).jpg' },
+  { value: '$23', image: 'web-thecartel/image/image (3).jpg' }
+])
   +loadmore
   +katamen
