@@ -1,0 +1,56 @@
+extends _template.pug
+include web-thecartel/pug/table.pug
+
+block konten
+   +table
+   div.table-of-contents
+      p Table of Contents:
+      ul
+         li The Renaissance of Renewable Energy
+         li Harnessing the Power of the Sun
+         li Wind Energy: The Giants of Renewable Power
+         li Hydropower: The Ancient Innovator Reimagined
+         li The Emerging Role of Geothermal Energy
+         li The Future of Renewable Energy
+
+   
+   div.additional-content
+      h2 The Renaissance of Renewable Energy
+      p In an age where environmental sustainability has become paramount, the shift towards renewable energy sources marks a significant stride in our quest for a greener planet. This journey, driven by innovation and commitment, highlights the growing importance of harnessing energy that is sustainable, efficient, and less harmful to the natural world.
+      
+      h2 Harnessing the Power of the Sun
+      p Solar power, a cornerstone of renewable energy, has seen remarkable advancements in recent years. From residential rooftops to vast solar farms, the implementation of solar technology is a testament to human ingenuity in the pursuit of sustainable energy solutions.
+      
+      h3 Key Developments in Solar Energy:
+      ul
+         li 2022: Breakthrough in solar panel efficiency, reaching a record 25%.
+         li 2024: Large-scale adoption of transparent solar panels in urban architecture.
+         li 2026: Introduction of solar-powered vehicles in mainstream markets.
+
+   style.
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+      
+      .table-of-contents {
+         color: white;
+         margin-top: 79px;
+         text-align: left;
+         font-size: 28px;
+         font-family: 'Inter', sans-serif;
+      }
+      
+      .additional-content {
+         color: white;
+         margin-top: 20px; 
+         font-size: 20px;
+         font-family: 'Inter', sans-serif;
+      }
+      
+      .additional-content h2 {
+         font-size: 24px;
+         margin-top: 15px;
+      }
+      
+      .additional-content h3 {
+         font-size: 22px;
+         margin-top: 10px;
+      }
