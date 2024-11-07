@@ -1,4 +1,4 @@
-mixin watch
+mixin 7(data)
   style.
     .b {
       position: absolute;
@@ -152,116 +152,42 @@ mixin watch
         object-fit: cover;
         border-radius: 13px;
     }
-    .parent {
-        width: 294px;
-        position: relative;
-        height: 449px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        right: 79px;
-        top: 65px;
+    .parent1 { top: 102px; right: 115px; height: 449px; }
+    .parent2 { left: 223px; bottom: 350px; height: 83px; }
+    .parent3 { left: 544px; bottom: 428px; height: 83px; }
+    .parent4 { left: 867px; bottom: 512px; height: 193px; }
+    .parent5 { left: 706px; bottom: 475px; height: 50px; }
+    .parent6 { left: 384px; bottom: 524px; height: 0px; }
+    .parent7 { left: 67px; bottom: 528px; height: 0px; }
+
+    /* Media query for medium screens (tablets) */
+    @media (max-width: 1024px) {
+      .parent { width: 220px; font-size: 28px; }
+      .parent1 { top: 50px; right: 80px; height: 400px; }
+      .parent2 { left: 180px; bottom: 200px; height: 70px; }
+      .parent3 { left: 400px; bottom: 300px; height: 70px; }
+      .parent4 { left: 700px; bottom: 350px; height: 180px; }
+      .parent5 { left: 600px; bottom: 300px; height: 40px; }
+      .parent6 { left: 320px; bottom: 380px; height: 0px; }
+      .parent7 { left: 120px; bottom: 380px; height: 0px; }
     }
-    .parentdua {
-        width: 294px;
-        position: relative;
-        height: 83px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 301px;
-        bottom: 250px;
+
+    /* Media query for small screens (mobile) */
+    @media (max-width: 600px) {
+      .parent { width: 180px; font-size: 24px; }
+      .parent1 { top: 40px; right: 20px; height: 350px; }
+      .parent2 { left: 50px; bottom: 180px; height: 60px; }
+      .parent3 { left: 200px; bottom: 280px; height: 60px; }
+      .parent4 { left: 400px; bottom: 300px; height: 160px; }
+      .parent5 { left: 320px; bottom: 250px; height: 30px; }
+      .parent6 { left: 180px; bottom: 320px; height: 0px; }
+      .parent7 { left: 40px; bottom: 320px; height: 0px; }
     }
-    .parenttiga {
-        width: 294px;
-        position: relative;
-        height: 83px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 608px;
-        bottom: 328px;
-    }
-    .parentempat {
-        width: 294px;
-        position: relative;
-        height: 193px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 940px;
-        bottom: 412px;
-    }
-    .parentlima {
-        width: 294px;
-        position: relative;
-        height: 50px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 779px;
-        bottom: 375px;
-    }
-    .parentenam {
-        width: 294px;
-        position: relative;
-        height: 0px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 461px;
-        bottom: 424px;
-    }
-    .parenttujuh {
-        width: 294px;
-        position: relative;
-        height: 0px;
-        text-align: left;
-        font-size: 32px;
-        color: #fff;
-        font-family: Poppins;
-        left: 158px;
-        bottom: 428px
-    }
-  
-  .parent
-    b.b $77
-    .button
-      b.button1 ADD+
-    img.image-icon(alt='', src='web-thecartel/image/image (24).png')
-  .parentdua
-    b.b $66
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (25).png')
-  .parenttiga
-    b.b $34
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (26).png')
-  .parentempat
-    b.b $23
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (27).png')
-  .parentlima
-    b.b $99
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (28).png')
-  .parentenam
-    b.b $67
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (29).png')
-  .parenttujuh
-    b.b $23
-    .button
-      b.button1 ADD+
-    img.image-icondua(alt='', src='web-thecartel/image/image (30).png')
+
+  each item, index in data
+    .parent(class=`parent${index + 1}`)
+      b.b= item.value
+      .button
+        b.button1 ADD+
+      img.image-icon(alt='', src=item.image)
+

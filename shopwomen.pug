@@ -1,8 +1,18 @@
 extends _template.pug
-include web-thecartel/pug/women.pug
+include web-thecartel/pug/shop8.pug
 include web-thecartel/pug/button-loadmoree2.pug
 include web-thecartel/pug/tulisanwomen.pug
 block konten
-  +women
+  +8([
+  { value: '$89', image: 'web-thecartel/image/image (39).png' },
+  { value: '$57', image: 'web-thecartel/image/image (40).png' },
+  { value: '$34', image: 'web-thecartel/image/image (41).png' },
+  { value: '$87', image: 'web-thecartel/image/image (42).png' },
+  { value: '$74', image: 'web-thecartel/image/image (43).png' },
+  { value: '$24', image: 'web-thecartel/image/image (44).png' },
+  { value: '$97', image: 'web-thecartel/image/image (45).png' },
+  { value: '$67', image: 'web-thecartel/image/image (46).png' }
+])
+
   +loadmore2
   +katawomen
