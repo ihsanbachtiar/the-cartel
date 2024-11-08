@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="description" content="THE CARTEL - Homepage">
+    <title>THE CARTEL - Homepage</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Notable:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abhaya+Libre+SemiBold:wght@400&display=swap">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar-statedefault">
+            <h1 class="the-cartel">THE CARTEL</h1>
+            <a href="#" class="home-hover1"><div class="home">Home</div></a>
+            <a href="#blog" class="blog-hover1"><div class="blog"><div class="blog1">Blog</div></div></a>
+            <a href="#shop" class="shop-hover1"><div class="shop"><div class="blog1">Shop</div></div></a>
+            <a href="#about" class="about-hover1"><div class="shop"><div class="blog1">About</div></div></a>
+            <img class="profile-icon" alt="Profile" src="Profile.svg" id="profileIcon">
+            <img class="bag-frame-icon" alt="Shopping bag" src="bag-frame.svg" id="bagFrameIcon">
+        </nav>
+    </header>
+
+    <main class="typgraphy">
+        <section class="desktop-3">
+            <div class="background"></div>
+            <div class="desktop-3-child"></div>
+            <div class="typography">TYPOGRAPHY</div>
+            <div class="blockquote">BLOCKQUOTE</div>
+            <img class="image-icon" alt="Image" src="image.png">
+
+            <div class="div">‘’</div>
+            <div class="the-purpose-of">
+                ‘” the purpose of life is put to be happy. It is to be useful, to be honorable, to be compassionate, 
+                to have it make some difference that you have lived and lived well.”
+            </div>
+            <div class="div1">‘’</div>
+
+            <footer class="footer">
+                <p>Copyright © 2024. <a href="/terms">All Rights Reserved</a>.</p>
+            </footer>
+        </section>
+
+        <section class="image-section">
+            <div class="image">Image</div>
+            <img class="image-8-icon" alt="Image 8" src="image 8.png">
+            <img class="image-11-icon" alt="Image 11" src="image 11.png">
+            <img class="image-7-icon" alt="Image 7" src="image 7.png">
+            <img class="image-9-icon" alt="Image 9" src="image 9.png">
+            <img class="image-10-icon" alt="Image 10" src="image 10.png">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright-2024">Copyright © 2024. All Right Reserved.</div>
+        <div class="footer-child"></div>
+    </footer>
+
+    <script>
+        var profileIcon = document.getElementById("profileIcon");
+        if(profileIcon) {
+            profileIcon.addEventListener("click", function () {
+                alert("Profile clicked!");
+            });
+        }
+
+        var bagFrameIcon = document.getElementById("bagFrameIcon");
+        if(bagFrameIcon) {
+            bagFrameIcon.addEventListener("click", function () {
+                alert("Shopping bag clicked!");
+            });
+        }
+    </script>
+
+</body>
+</html>
