@@ -1,0 +1,15 @@
+extends _template.pug 
+include web-thecartel/pug/fs.pug
+include web-thecartel/pug/tulisanflash.pug
+block konten
+  +fs([
+  { price: '$13', image: 'web-thecartel/image/Rectangle 48.png' },
+  { price: '$25', image: 'web-thecartel/image/Rectangle 48 (1).png' },
+  { price: '$37', image: 'web-thecartel/image/Rectangle 48 (2).png' },
+  { price: '$49', image: 'web-thecartel/image/Rectangle 48 (3).png' },
+  { price: '$61', image: 'web-thecartel/image/Rectangle 48 (4).png' },
+  { price: '$73', image: 'web-thecartel/image/Rectangle 48 (5).png' },
+  { price: '$85', image: 'web-thecartel/image/Rectangle 48 (6).png' },
+  { price: '$97', image: 'web-thecartel/image/Rectangle 48 (7).png' }
+])
+  +flash

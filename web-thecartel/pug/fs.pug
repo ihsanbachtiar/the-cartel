@@ -1,0 +1,119 @@
+mixin fs(data)
+  style.
+    .fs-container {
+      position: relative;
+      width: 100%;
+      height: 943px;
+      top: 250px;
+    }
+
+    .fs-child {
+      position: relative;
+      top: 19px;
+      left: 16px;
+      border-radius: 20px;
+      width: 185px;
+      height: 194px;
+      object-fit: cover;
+    }
+    .button1 {
+      position: relative;
+      line-height: 100%;
+    }
+    .button {
+      border-radius: 8px;
+      background-color: #2c2c2c;
+      border: 1px solid #2c2c2c;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      padding: 10px;
+      left: 118px;
+      top: 237px;
+    }
+    .add {
+      top: 237px;
+      left: 116px;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .fs-item {
+      position: absolute;
+      top: 227px;
+      left: 29px;
+      border-radius: 20px;
+      background-color: #d6d6d6;
+      width: 83px;
+      height: 56px;
+    }
+    .div {
+      position: absolute;
+      top: 234px;
+      left: 39px;
+      font-size: 32px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: inline-block;
+      width: 57px;
+      height: 37px;
+    }
+    .fs {
+      width: 257px;
+      position: relative;
+      height: 291px;
+      overflow: hidden;
+      text-align: left;
+      font-size: 16px;
+      color: #f5f5f5;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .fs1 { position: absolute; top: 20px; left: 20px; }
+    .fs2 { position: absolute; top: 20px; left: 300px; }
+    .fs3 { position: absolute; top: 20px; left: 580px; }
+    .fs4 { position: absolute; top: 320px; left: 20px; }
+    .fs5 { position: absolute; top: 320px; left: 300px; }
+    .fs6 { position: absolute; top: 320px; left: 580px; }
+    .fs7 { position: absolute; top: 320px; left: 850px; }
+    .fs8 { position: absolute; top: 15px; left: 850px; }
+
+    @media (max-width: 1024px) {
+      .fs1 { top: 20px; left: 10px; }
+      .fs2 { top: 20px; left: 250px; }
+      .fs3 { top: 320px; left: 10px; }
+      .fs4 { top: 320px; left: 250px; }
+      .fs5 { top: 620px; left: 10px; }
+      .fs6 { top: 620px; left: 250px; }
+      .fs7 { top: 920px; left: 10px; }
+      .fs8 { top: 920px; left: 250px; }
+    }
+
+    @media (max-width: 600px) {
+      .fs1 { top: 10px; left: 5px; }
+      .fs2 { top: 260px; left: 5px; }
+      .fs3 { top: 510px; left: 5px; }
+      .fs4 { top: 760px; left: 5px; }
+      .fs5 { top: 1010px; left: 5px; }
+      .fs6 { top: 1260px; left: 5px; }
+      .fs7 { top: 1510px; left: 5px; }
+      .fs8 { top: 1760px; left: 5px; }
+    }
+
+  .fs-container
+    each item, index in data
+      .fs(class=`fs${index + 1}`)
+        img.fs-child(alt='' src=item.image)
+        
+        .add
+          .button
+            b.button1 ADD+
+        
+        .fs-item
+        .fs-item
+        
+        .div=item.price
