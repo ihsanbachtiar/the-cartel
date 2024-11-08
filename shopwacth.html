@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCartel</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="body-like">
+      <div class="container"><!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Navbar</title>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <style>
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+              
+              body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f5f5f5;
+              }
+              
+              nav {
+                background: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
+                width: 100%;
+                padding: 35px 110px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+              
+              .logo {
+              width: 234px;
+              position: relative;
+              font-size: 40px;
+              display: inline-block;
+              font-family: Poppins;
+              background: linear-gradient(90deg, #fff 71.5%, #999 96.36%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              text-align: left;
+              cursor: pointer;
+              font-weight: bold;
+              }
+              
+              .nav-links {
+                list-style-type: none;
+                display: flex;
+                gap: 10px;
+              }
+              
+              .nav-links li {
+                position: relative;
+                display: inline-block;
+              }
+              
+              .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 10px 15px;
+                transition: background-color 0.3s ease;
+              }
+              .nav-links b {
+                color: #1555D1;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 10px 15px;
+                transition: background-color 0.3s ease;
+              }
+              
+              .nav-links a:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+              .nav-links b:hover {
+                background-color: #555;
+                border-radius: 5px;
+              }
+              
+              .dropdown {
+                display: none;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.14);
+                list-style: none;
+                padding: 10px 0;
+                border-radius: 5px;
+                z-index: 1000;
+                top: 100%;
+                left: 0;
+              }
+              
+              .nav-links li:hover .dropdown {
+                display: block;
+              }
+              
+              .dropdown li {
+                padding: 5px 15px;
+              }
+              
+              .dropdown li a {
+                padding: 5px 15px;
+                white-space: nowrap;
+              }
+              
+              .icons {
+                display: flex;
+                gap: 15px;
+              }
+              
+              .icon {
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+                transition: color 0.3s ease;
+              }
+              
+              .icon:hover {
+                color: #999;
+              }
+            </style>
+          </head>
+          <body>
+            <nav>
+              <div class="logo">THE CARTEL</div>
+              <div> 
+                <ul class="nav-links">
+                  <li><b href="./index.html">Home </b>
+                    <ul class="dropdown">
+                      <li><a href="./contactus.html">Contact</a></li>
+                      <li><a href="./_team.html">Team</a></li>
+                      <li><a href="#">Author list</a></li>
+                      <li><a href="#">Typography</a></li>
+                      <li><a href="#">Help</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="BLOG.html">Blog </a>
+                    <ul class="dropdown">
+                      <li><a href="#">Latest Posts</a></li>
+                      <li><a href="#">Categories</a></li>
+                      <li><a href="#">Archives</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./_about.html">About </a>
+                    <ul class="dropdown">
+                      <li><a href="./_faq.html">FAQ</a></li>
+                      <li><a href="./_trackorder.html">Track order</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="./_spesialthanks.html">Special thanks</a></li>
+                      <li><a href="#">Check out</a></li>
+                      <li><a href="#">Table of content</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Shop </a>
+                    <ul class="dropdown">
+                      <li><a href="#">Single product</a></li>
+                      <li><a href="./shophat.html">Hat</a></li>
+                      <li><a href="./shopmen.html">Men</a></li>
+                      <li><a href="./shopwomen.html">Women</a></li>
+                      <li><a href="./shopshoes.html">Shoes</a></li>
+                      <li><a href="./shopwacth.html">Watch</a></li>
+                    </ul>
+                  </li>
+                  <li> <a class="icon" href="_login.html">
+                      <svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                      </svg></a></li>
+                  <li> <a class="icon" href="./createaccount.html">
+                      <svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </nav>
+          </body>
+        </html>
+        <style>
+          .b {
+            position: absolute;
+            top: 206px;
+            left: 71px;
+            display: inline-block;
+            width: 75px;
+            height: 64px;
+          }
+          .b2 {
+            position: absolute;
+            top: 226px;
+            left: 71px;
+            display: inline-block;
+            width: 75px;
+            height: 64px;
+          }
+          .button1 {
+            position: relative;
+            line-height: 100%;
+          }
+          .button2 {
+            position: relative;
+            line-height: 100%;
+          }
+          .button {
+            position: absolute;
+            top: 272px;
+            left: 71px;
+            border-radius: 8px;
+            background-color: #2c2c2c;
+            border: 1px solid #2c2c2c;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            font-size: 16px;
+            color: #f5f5f5;
+            font-family: Inter;
+          }
+          .button2 {
+            position: absolute;
+            top: 279px;
+            left: 71px;
+            border-radius: 8px;
+            background-color: #2c2c2c;
+            border: 1px solid #2c2c2c;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            font-size: 16px;
+            color: #f5f5f5;
+            font-family: Inter;
+          }
+          .image-icon {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 201px;
+            height: 209px;
+            object-fit: cover;
+          }
+          .image-icondua {
+            position: relative;
+            top: 14px;
+            left: 0px;
+            width: 196px;
+            height: 191px;
+            object-fit: cover;
+            border-radius:22px
+          }
+          .parent {
+            width: 100%;
+            position: relative;
+            height: 319px;
+            text-align: left;
+            font-size: 32px;
+            color: #fff;
+            font-family: Poppins;
+          }
+          .parent b.b {
+            position: relative;
+            top: 189px;
+            left: 148px;
+            display: inline-block;
+            width: 75px;
+            height: 64px;
+          }
+          .parent b.b2 {
+            position: relative;
+            top: 189px;
+            left: 148px;
+            display: inline-block;
+            width: 75px;
+            height: 64px;
+          }
+          .parent .button {
+              position: absolute;
+              top: 407px;
+              left: 147px;
+              border-radius: 8px;
+              background-color: #2c2c2c;
+              border: 1px solid #2c2c2c;
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 12px;
+              font-size: 16px;
+              color: #f5f5f5;
+              font-family: Inter;
+          }
+          .parent .button2 {
+              position: absolute;
+              top: 407px;
+              left: 147px;
+              border-radius: 8px;
+              background-color: #2c2c2c;
+              border: 1px solid #2c2c2c;
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 12px;
+              font-size: 16px;
+              color: #f5f5f5;
+              font-family: Inter;
+          }
+          .parent img.image-icon {
+              position: relative;
+              top: 148px;
+              left: 0px;
+              width: 196px;
+              height: 191px;
+              object-fit: cover;
+              border-radius: 13px;
+          }
+          .parent img.image-icondua {
+              position: relative;
+              top: 148px;
+              left: 0px;
+              width: 196px;
+              height: 191px;
+              object-fit: cover;
+              border-radius: 13px;
+          }
+          .parent1 { top: 102px; right: 115px; height: 449px; }
+          .parent2 { left: 223px; bottom: 350px; height: 83px; }
+          .parent3 { left: 544px; bottom: 428px; height: 83px; }
+          .parent4 { left: 867px; bottom: 512px; height: 193px; }
+          .parent5 { left: 706px; bottom: 475px; height: 50px; }
+          .parent6 { left: 384px; bottom: 524px; height: 0px; }
+          .parent7 { left: 67px; bottom: 528px; height: 0px; }
+          
+          /* Media query for medium screens (tablets) */
+          @media (max-width: 1024px) {
+            .parent { width: 220px; font-size: 28px; }
+            .parent1 { top: 50px; right: 80px; height: 400px; }
+            .parent2 { left: 180px; bottom: 200px; height: 70px; }
+            .parent3 { left: 400px; bottom: 300px; height: 70px; }
+            .parent4 { left: 700px; bottom: 350px; height: 180px; }
+            .parent5 { left: 600px; bottom: 300px; height: 40px; }
+            .parent6 { left: 320px; bottom: 380px; height: 0px; }
+            .parent7 { left: 120px; bottom: 380px; height: 0px; }
+          }
+          
+          /* Media query for small screens (mobile) */
+          @media (max-width: 600px) {
+            .parent { width: 180px; font-size: 24px; }
+            .parent1 { top: 40px; right: 20px; height: 350px; }
+            .parent2 { left: 50px; bottom: 180px; height: 60px; }
+            .parent3 { left: 200px; bottom: 280px; height: 60px; }
+            .parent4 { left: 400px; bottom: 300px; height: 160px; }
+            .parent5 { left: 320px; bottom: 250px; height: 30px; }
+            .parent6 { left: 180px; bottom: 320px; height: 0px; }
+            .parent7 { left: 40px; bottom: 320px; height: 0px; }
+          }
+          
+        </style>
+        <div class="parent parent1"><b class="b">$77</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (24).png"/>
+        </div>
+        <div class="parent parent2"><b class="b">$66</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (25).png"/>
+        </div>
+        <div class="parent parent3"><b class="b">$34</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (26).png"/>
+        </div>
+        <div class="parent parent4"><b class="b">$23</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (27).png"/>
+        </div>
+        <div class="parent parent5"><b class="b">$99</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (28).png"/>
+        </div>
+        <div class="parent parent6"><b class="b">$67</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (29).png"/>
+        </div>
+        <div class="parent parent7"><b class="b">$23</b>
+          <div class="button"><b class="button1">ADD+</b></div><img class="image-icon" alt="" src="web-thecartel/image/image (30).png"/>
+        </div>
+        <style>
+          .watch {
+              position: relative;
+              top: 0px;
+              left: 0px;
+              display: inline-block;
+              width: 154px;
+              height: 90px;
+          }
+          .frame-child {
+              position: absolute;
+              top: 97.5px;
+              left: -0.5px;
+              border-top: 1px solid #fff;
+              box-sizing: border-box;
+              width: 202px;
+              height: 1px;
+          }
+          .watch-contaner {
+              width: 100%;
+              position: relative;
+              height: 0px;
+              text-align: left;
+              font-size: 64px;
+              color: #fff;
+              font-family: Poppins;
+              bottom: 769px;
+          }
+          
+        </style>
+        <div class="watch-contaner"><b class="men">watch</b>
+          <div class="frame-child"></div>
+        </div><!DOCTYPE html>
+        <html>
+          <head>
+            <style>
+              body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+              }
+              .footer {
+                color: #BEBEBE;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 45px 200px;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+              }
+              .footer .copyright {
+                font-size: 14px;
+              }
+              .footer .nav {
+                display: flex;
+                gap: 20px;
+              }
+              .footer .nav a {
+                color: #254B62;
+                text-decoration: none;
+                font-size: 16px;
+              }
+              .footer .nav a.active{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 16px;
+              }
+              
+              .footer .nav a:hover {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+              }
+              
+            </style>
+          </head>
+          <body>
+                    <div class="footer">
+                      <div class="copyright">Copyright © 2024. All Right Reserved.</div>
+                      <div class="nav"><a class="active" href="./index.html">Home</a><a href="./BLOG.html">Blog</a><a href="./_shop.html">Shop</a><a href="./_about.html">About</a></div>
+                    </div>
+          </body>
+        </html>
+      </div>
+    </div>
+  </body>
+</html>

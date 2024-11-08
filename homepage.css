@@ -65,6 +65,7 @@
     overflow: hidden;
     object-fit: cover;
     margin-left: 100px;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
 }
 
 
@@ -118,13 +119,15 @@
 }
 
 .absolute-content {
-    position: absolute;
+    margin-left: 30px;
+    width: 460px;
     z-index: 2;
 }
   
 .absolute-content-2 {
     margin-top: 120px;
-    position: absolute;
+    width: 675px;
+    margin-left: 25px;
 }
 
 .content-img-right {

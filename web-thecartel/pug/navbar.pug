@@ -20,7 +20,7 @@ html(lang="en")
       }
 
       nav {
-        color: white ;
+        background: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
         width: 100%;
         padding: 35px 110px;
         position: fixed;
@@ -33,8 +33,17 @@ html(lang="en")
       }
 
       .logo {
-        font-size: 24px;
-        font-weight: 600;
+      width: 234px;
+      position: relative;
+      font-size: 40px;
+      display: inline-block;
+      font-family: Poppins;
+      background: linear-gradient(90deg, #fff 71.5%, #999 96.36%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      cursor: pointer;
+      font-weight: bold;
       }
 
       .nav-links {
@@ -55,8 +64,19 @@ html(lang="en")
         padding: 10px 15px;
         transition: background-color 0.3s ease;
       }
+      .nav-links b {
+        color: #1555D1;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+      }
 
       .nav-links a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+      .nav-links b:hover {
         background-color: #555;
         border-radius: 5px;
       }
@@ -103,13 +123,13 @@ html(lang="en")
       }
   body
     nav
-      .logo TheCartel
+      .logo THE CARTEL
       div 
         ul.nav-links
           li
-            a(href="./index.html") Home 
+            b(href="./index.html") Home 
             ul.dropdown
-              li: a(href="./contact-us.html") Contact
+              li: a(href="./contactus.html") Contact
               li: a(href="./_team.html") Team
               li: a(href="#") Author list
               li: a(href="#") Typography
@@ -133,11 +153,11 @@ html(lang="en")
             a(href="#") Shop 
             ul.dropdown
               li: a(href="#") Single product
-              li: a(href="#") Hat
-              li: a(href="./_shop.html") Men
-              li: a(href="#") Women
-              li: a(href="#") Shoes
-              li: a(href="#") Watch
+              li: a(href="./shophat.html") Hat
+              li: a(href="./shopmen.html") Men
+              li: a(href="./shopwomen.html") Women
+              li: a(href="./shopshoes.html") Shoes
+              li: a(href="./shopwacth.html") Watch
           li 
             a.icon(href="_login.html")
               svg.bi.bi-person-circle(xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16")

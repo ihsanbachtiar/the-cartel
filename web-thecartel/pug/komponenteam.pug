@@ -55,13 +55,13 @@ mixin teamSection()
     }
 
   script.
-    // JavaScript untuk mengganti gambar saat hover
+
     document.addEventListener('DOMContentLoaded', function() {
       const members = document.querySelectorAll('.team-member img');
       
       members[0].addEventListener('mouseenter', function() {
         this.dataset.original = this.src;
-        this.src = 'web-thecartel/image/Rectangle 10.jpg'; // Gambar hover untuk Designer
+        this.src = 'web-thecartel/image/Rectangle 10.jpg'; 
       });
       members[0].addEventListener('mouseleave', function() {
         this.src = this.dataset.original;
@@ -69,7 +69,7 @@ mixin teamSection()
 
       members[1].addEventListener('mouseenter', function() {
         this.dataset.original = this.src;
-        this.src = 'web-thecartel/image/Property 1=Variant2.jpg'; // Gambar hover untuk Programmer
+        this.src = 'web-thecartel/image/Property 1=Variant2.jpg'; 
       });
       members[1].addEventListener('mouseleave', function() {
         this.src = this.dataset.original;
@@ -77,7 +77,7 @@ mixin teamSection()
 
       members[2].addEventListener('mouseenter', function() {
         this.dataset.original = this.src;
-        this.src = 'web-thecartel/image/Rectangle 10 (1).jpg'; // Gambar hover untuk Analyst
+        this.src = 'web-thecartel/image/Rectangle 10 (1).jpg'; 
       });
       members[2].addEventListener('mouseleave', function() {
         this.src = this.dataset.original;

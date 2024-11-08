@@ -1,35 +1,28 @@
-doctype html
-html
-  head
+mixin loadmore
+  div(style="font-family: 'Poppins', sans-serif;")
     style.
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #3b82b1;
+      .load-more {
+        position: relative;
       }
-      .button {
-        font-family: Poppins, sans-serif;
-        font-size: 48px;
-        color: white;
-        background-color: #ffffff00;
-        border: 5px solid #e74c3c;
+      
+      .readmore {
+        width: 16%;
+        position: relative;
         border-radius: 20px;
-        padding: 56px 165px;
-        text-align: center;
-        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #d94949;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: left;
+        font-size: 24px;
+        color: #fff;
+        font-family: Poppins;
+        left: 960px;
+        bottom: 55px;
       }
-      .button:hover {
-        background-color: #A63939;
-        color: #ffffff;
-      }
-
-  
-  mixin loadmore(className, label)
-    loadmore(class=className)= label
-
-  body
-    
-    +loadmore('button', 'Load more')
+    .readmore
+      .load-more Load more
