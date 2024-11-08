@@ -1,0 +1,19 @@
+extends _template
+include web-thecartel/pug/ctgr.pug
+include web-thecartel/pug/shop6.pug
+include web-thecartel/pug/cart.pug
+include web-thecartel/pug/cart2.pug
+include web-thecartel/pug/cart3.pug
+block konten
+  +content()
+  +6([
+  { value: '$89', image: 'web-thecartel/image/image (39).png' },
+  { value: '$57', image: 'web-thecartel/image/image (40).png' },
+  { value: '$34', image: 'web-thecartel/image/image (41).png' },
+  { value: '$87', image: 'web-thecartel/image/image (42).png' },
+  { value: '$74', image: 'web-thecartel/image/image (43).png' },
+  { value: '$24', image: 'web-thecartel/image/image (44).png' }
+])
+  +fs1
+  +cart()
+  +cart2()
