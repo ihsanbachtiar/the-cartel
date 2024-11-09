@@ -63,7 +63,7 @@ mixin six(data)
     .parent7 { left: 450px; top: 846px; height: 100px; position: absolute; }
     .parent8 { left: 800px; top: 846px; height: 100px; position: absolute; }
 
-    /* Media query for medium screens (tablets) */
+    
     @media (max-width: 1024px) {
       .parent { width: 220px; font-size: 28px; }
       .parent1 { top: 50px; right: 80px; height: 400px; }
@@ -76,7 +76,7 @@ mixin six(data)
       .parent8 { left: 700px; top: 150px; height: 80px; }
     }
 
-    /* Media query for small screens (mobile) */
+    
     @media (max-width: 600px) {
       .parent { width: 180px; font-size: 24px; }
       .parent1 { top: 40px; right: 20px; height: 350px; }
@@ -89,7 +89,7 @@ mixin six(data)
       .parent8 { left: 350px; top: 120px; height: 60px; }
     }
 
-  // Loop untuk membuat elemen berdasarkan data yang diterima
+  
   .container
     each item, index in data
       .parent(class=`parent${index + 1}`)
