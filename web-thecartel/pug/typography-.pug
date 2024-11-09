@@ -1,0 +1,95 @@
+mixin typo
+  style.
+    .container {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 20px;
+      margin-top: 42px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+      font-weight: bold;
+      font-size: 60px;
+    }
+
+    hr {
+      margin: 10px 0;
+      border: 0.5px solid #ffffff;
+    }
+
+    .blockquote-section {
+      margin: 20px 0;
+    }
+
+    .blockquote {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .image-with-text {
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+
+    .image-with-text img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: 15px;
+      font-size: 1em;
+      border-radius: 5px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .image-title {
+      font-size: 2.2em;
+      margin: 20px 0 10px;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 10px;
+    }
+
+    .image-gallery img {
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    
+  .container
+      h1 TYPOGRAPHY
+      hr
+      .blockquote-section
+        p.blockquote BLOCKQUOTE
+        .image-with-text
+          img(src="web-thecartel/image/typo.png" alt="")
+          .text-overlay
+            p “the purpose of life is put to be happy. it is to be useful, to be honorable, to be compassionate, to have it make some difference that you have and lived well”
+
+      p.image-title Image
+      .image-gallery
+        - const images = ['web-thecartel/image/typo1.png', 'web-thecartel/image/image 9.png', 'web-thecartel/image/image 7.png', 'web-thecartel/image/image 11.png']
+        each image, index in images
+          img(src=image, alt=`Image ${index + 1}`)

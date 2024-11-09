@@ -1,407 +1,286 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheCartel</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <div class="body-like">
-      <div class="container"><!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Navbar</title>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="style.css">
-            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-            <style>
-              * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-              }
-              
-              body {
-                font-family: 'Poppins', sans-serif;
-                background-color: #f5f5f5;
-              }
-              
-              nav {
-                background: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
-                width: 100%;
-                padding: 35px 110px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1000;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              }
-              
-              .logo {
-              width: 234px;
-              position: relative;
-              font-size: 40px;
-              display: inline-block;
-              font-family: Poppins;
-              background: linear-gradient(90deg, #fff 71.5%, #999 96.36%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              text-align: left;
-              cursor: pointer;
-              font-weight: bold;
-              }
-              
-              .nav-links {
-                list-style-type: none;
-                display: flex;
-                gap: 10px;
-              }
-              
-              .nav-links li {
-                position: relative;
-                display: inline-block;
-              }
-              
-              .nav-links a {
-                color: white;
-                text-decoration: none;
-                font-weight: 500;
-                padding: 10px 15px;
-                transition: background-color 0.3s ease;
-              }
-              .nav-links b {
-                color: #1555D1;
-                text-decoration: none;
-                font-weight: 500;
-                padding: 10px 15px;
-                transition: background-color 0.3s ease;
-              }
-              
-              .nav-links a:hover {
-                background-color: #555;
-                border-radius: 5px;
-              }
-              .nav-links b:hover {
-                background-color: #555;
-                border-radius: 5px;
-              }
-              
-              .dropdown {
-                display: none;
-                position: absolute;
-                background-color: rgba(255, 255, 255, 0.14);
-                list-style: none;
-                padding: 10px 0;
-                border-radius: 5px;
-                z-index: 1000;
-                top: 100%;
-                left: 0;
-              }
-              
-              .nav-links li:hover .dropdown {
-                display: block;
-              }
-              
-              .dropdown li {
-                padding: 5px 15px;
-              }
-              
-              .dropdown li a {
-                padding: 5px 15px;
-                white-space: nowrap;
-              }
-              
-              .icons {
-                display: flex;
-                gap: 15px;
-              }
-              
-              .icon {
-                color: white;
-                font-size: 18px;
-                text-decoration: none;
-                transition: color 0.3s ease;
-              }
-              
-              .icon:hover {
-                color: #999;
-              }
-            </style>
-          </head>
-          <body>
-            <nav>
-              <div class="logo">THE CARTEL</div>
-              <div> 
-                <ul class="nav-links">
-                  <li><b href="./index.html">Home </b>
-                    <ul class="dropdown">
-                      <li><a href="./contactus.html">Contact</a></li>
-                      <li><a href="./_team.html">Team</a></li>
-                      <li><a href="./pageauthor.html">Author list</a></li>
-                      <li><a href="./pageauthor.html">Typography</a></li>
-                      <li><a href="./pagehelp.html">Help</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="BLOG.html">Blog </a>
-                    <ul class="dropdown">
-                      <li><a href="#">Latest Posts</a></li>
-                      <li><a href="#">Categories</a></li>
-                      <li><a href="#">Archives</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="./_about.html">About </a>
-                    <ul class="dropdown">
-                      <li><a href="./_faq.html">FAQ</a></li>
-                      <li><a href="./_trackorder.html">Track order</a></li>
-                      <li><a href="#">Wishlist</a></li>
-                      <li><a href="./_spesialthanks.html">Special thanks</a></li>
-                      <li><a href="#">Check out</a></li>
-                      <li><a href="./tablecontent.html">Table of content</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Shop </a>
-                    <ul class="dropdown">
-                      <li><a href="#">Single product</a></li>
-                      <li><a href="./shophat.html">Hat</a></li>
-                      <li><a href="./shopmen.html">Men</a></li>
-                      <li><a href="./shopwomen.html">Women</a></li>
-                      <li><a href="./shopshoes.html">Shoes</a></li>
-                      <li><a href="./shopwacth.html">Watch</a></li>
-                    </ul>
-                  </li>
-                  <li> <a class="icon" href="_login.html">
-                      <svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
-                      </svg></a></li>
-                  <li> <a class="icon" href="./cart.html">
-                      <svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path>
-                      </svg></a></li>
-                </ul>
-              </div>
-            </nav>
-          </body>
-        </html>
-        <style>
-          .frame-child {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-              border-radius: 20px;
-              width: 100%;
-              height: 646px;
-          }
-          .d {
-              color: inherit;
-          }
-          .djarot {
-              position: absolute;
-              top: 125px;
-              left: 96px;
-              display: inline-block;
-              width: 212px;
-              height: 38px;
-          }
-          .bitwitter {
-              position: absolute;
-              top: 116px;
-              left: 404px;
-              width: 40px;
-              height: 38px;
-              overflow: hidden;
-          }
-          .group-icon {
-              position: absolute;
-              height: 0.19%;
-              width: 0.17%;
-              top: 23.56%;
-              right: 51.92%;
-              bottom: 76.25%;
-              left: 47.91%;
-              max-width: 100%;
-              overflow: hidden;
-              max-height: 100%;
-          }
-          .phasellus-viverra-nulla {
-              margin: 0;
-          }
-          .travel2 {
-              color: inherit;
-              white-space: pre-wrap;
-          }
-          .travel1 {
-              margin-bottom: 0px;
-          }
-          .travel {
-              margin: 0;
-              font-family: inherit;
-              font-size: inherit;
-              padding-left: 32px;
-          }
-          .node {
-              white-space: pre-wrap;
-          }
-          .vegan-cooking-easy {
-              text-decoration: underline;
-          }
-          .phasellus-viverra-nulla-container {
-              position: absolute;
-              top: 189px;
-              left: 78px;
-              display: inline-block;
-              width: 783px;
-              height: 349px;
-          }
-          .load-more {
-              position: relative;
-          }
-          .readmore {
-              position: absolute;
-              top: 568px;
-              left: 78px;
-              border-radius: 20px;
-              background-color: rgba(255, 255, 255, 0);
-              border: 1px solid #d94949;
-              box-sizing: border-box;
-              width: 165px;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-              padding: 10px;
-          }
-          .facebook-icon {
-              position: absolute;
-              top: 120px;
-              left: 291px;
-              width: 33.3px;
-              height: 31.6px;
-          }
-          .linkedin-icon {
-              position: absolute;
-              top: 123px;
-              left: 337px;
-              width: 27.7px;
-              height: 30.1px;
-          }
-          .twitter-icon {
-              position: absolute;
-              top: 122px;
-              left: 377px;
-              width: 40px;
-              height: 30.9px;
-          }
-          .youtube-icon {
-              position: absolute;
-              top: 124px;
-              left: 424px;
-              width: 41px;
-              height: 27.8px;
-          }
-          .vector-parent {
-              width: 999px;
-              position: relative;
-              height: 974px;
-              text-align: left;
-              font-size: 24px;
-              color: #fff;
-              font-family: Poppins;
-              top: 200px;
-              left: 52px;
-          }
-          
-        </style>
-        <div class="vector-parent"><img class="frame-child" alt="" src="web-thecartel/image/Rectangle 11.png"/>
-          <div class="djarot"><a class="d" href="https://elisen-theme.jkdevstudio.com/author/admin/" target="_blank"></a><span class="vegan-cooking-easy">D</span>jarot</div>
-          <div class="bitwitter"></div><img class="group-icon" alt="" src="Group.svg"/>
-          <div class="phasellus-viverra-nulla-container">
-            <p class="phasellus-viverra-nulla">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nulla consequat massa quis enim.</p>
-            <p class="phasellus-viverra-nulla">Recent Posts:</p>
-            <ul class="travel"></ul>
-            <li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/travel/" target="_blank"></a><span class="vegan-cooking-easy">Travel</span></li>
-            <p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/maximizing-productivity-5-simple-strategies/" target="_blank"><span class="vegan-cooking-easy">Maximizing Productivity: 5 Simple Strategies</span></a>
-            <ul class="travel"></ul>
-            <li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/development/" target="_blank"></a><span class="vegan-cooking-easy">Development</span></li>
-            <p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/vegan-cooking-easy-and-delicious-recipes/" target="_blank"><span class="vegan-cooking-easy">Vegan Cooking: Easy and Delicious Recipes</span></a>
-            <ul class="travel"></ul>
-            <li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/gadgets/" target="_blank"></a><span class="vegan-cooking-easy">Gadgets</span></li>
-            <p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/yoga-practices-for-mind-and-body/" target="_blank"><span class="vegan-cooking-easy">Yoga Practices for Mind and Body</span></a>
-          </div>
-          <div class="readmore">
-            <div class="load-more">Load more</div>
-          </div><img class="facebook-icon" alt="" src="web-thecartel/image/FACEBOOK (1).png"/><img class="linkedin-icon" alt="" src="web-thecartel/image/LINKEDIN (1).png"/><img class="twitter-icon" alt="" src="web-thecartel/image/TWITTER.png"/><img class="youtube-icon" alt="" src="web-thecartel/image/YOUTUBE (1).png"/>
-        </div>
-        <style>
-          .image-container {
-                  width: 150px;
-                  height: 150px;
-                  border-radius: 50%;
-                  overflow: hidden;
-                  position: relative;
-                  bottom: 825px;
-                  left: 150px; 
-          }
-          
-        </style>
-        <div class="image-container"><img src="/web-thecartel/image/image (47).png" alt="Image" width="100%" height="100%"/></div><!DOCTYPE html>
-        <html>
-          <head>
-            <style>
-              body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-              }
-              .footer {
-                color: #BEBEBE;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 45px 200px;
-                bottom: 0;
-                width: 100%;
-                left: 0;
-              }
-              .footer .copyright {
-                font-size: 14px;
-              }
-              .footer .nav {
-                display: flex;
-                gap: 20px;
-              }
-              .footer .nav a {
-                color: #254B62;
-                text-decoration: none;
-                font-size: 16px;
-              }
-              .footer .nav a.active{
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 16px;
-              }
-              
-              .footer .nav a:hover {
-                color: white;
-                text-decoration: none;
-                font-size: 16px;
-              }
-              
-            </style>
-          </head>
-          <body>
-                    <div class="footer">
-                      <div class="copyright">Copyright © 2024. All Right Reserved.</div>
-                      <div class="nav"><a class="active" href="./index.html">Home</a><a href="./BLOG.html">Blog</a><a href="./_shop.html">Shop</a><a href="./_about.html">About</a></div>
-                    </div>
-          </body>
-        </html>
-      </div>
-    </div>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TheCartel</title><link rel="stylesheet" href="/style.css"></head><body><div class="body-like"><div class="container"><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Navbar</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/a076d05399.js"></script><style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background: linear-gradient(to top, rgba(0, 0, 0, -2.9), rgba(0, 0, 0, 13.5));
+  width: 100%;
+  padding: 35px 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+width: 234px;
+position: relative;
+font-size: 40px;
+display: inline-block;
+font-family: Poppins;
+background: linear-gradient(90deg, #fff 71.5%, #999 96.36%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: left;
+cursor: pointer;
+font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+.nav-links b {
+  color: #1555D1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+.nav-links b:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.14);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 5px 15px;
+}
+
+.dropdown li a {
+  padding: 5px 15px;
+  white-space: nowrap;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #999;
+}</style></head><body><nav><div class="logo">THE CARTEL</div><div> <ul class="nav-links"><li><b href="./index.html">Home </b><ul class="dropdown"><li><a href="./contactus.html">Contact</a></li><li><a href="./_team.html">Team</a></li><li><a href="./pageauthor.html">Author list</a></li><li><a href="./typography.html">Typography</a></li><li><a href="./pagehelp.html">Help</a></li></ul></li><li><a href="BLOG.html">Blog </a></li><li><a href="./_about.html">About </a><ul class="dropdown"><li><a href="./_faq.html">FAQ</a></li><li><a href="./_trackorder.html">Track order</a></li><li><a href="#">Wishlist</a></li><li><a href="./_spesialthanks.html">Special thanks</a></li><li><a href="#">Check out</a></li><li><a href="./tablecontent.html">Table of content</a></li></ul></li><li><a href="#">Shop </a><ul class="dropdown"><li><a href="./_singleproduct.html">Single product</a></li><li><a href="./shophat.html">Hat</a></li><li><a href="./shopmen.html">Men</a></li><li><a href="./shopwomen.html">Women</a></li><li><a href="./shopshoes.html">Shoes</a></li><li><a href="./shopwacth.html">Watch</a></li><li><a href="./flashsale.html">Flash Sale</a></li></ul></li><li> <a class="icon" href="_login.html"><svg class="bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path></svg></a></li><li> <a class="icon" href="./createaccount.html"><svg class="bi bi-bag" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"></path></svg></a></li></ul></div></nav></body></html><style>.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    width: 100%;
+    height: 646px;
+}
+.d {
+    color: inherit;
+}
+.djarot {
+    position: absolute;
+    top: 125px;
+    left: 96px;
+    display: inline-block;
+    width: 212px;
+    height: 38px;
+}
+.bitwitter {
+    position: absolute;
+    top: 116px;
+    left: 404px;
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+}
+.group-icon {
+    position: absolute;
+    height: 0.19%;
+    width: 0.17%;
+    top: 23.56%;
+    right: 51.92%;
+    bottom: 76.25%;
+    left: 47.91%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.phasellus-viverra-nulla {
+    margin: 0;
+}
+.travel2 {
+    color: inherit;
+    white-space: pre-wrap;
+}
+.travel1 {
+    margin-bottom: 0px;
+}
+.travel {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 32px;
+}
+.node {
+    white-space: pre-wrap;
+}
+.vegan-cooking-easy {
+    text-decoration: underline;
+}
+.phasellus-viverra-nulla-container {
+    position: absolute;
+    top: 189px;
+    left: 78px;
+    display: inline-block;
+    width: 783px;
+    height: 349px;
+}
+.load-more {
+    position: relative;
+}
+.readmore {
+    position: absolute;
+    top: 568px;
+    left: 78px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #d94949;
+    box-sizing: border-box;
+    width: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.facebook-icon {
+    position: absolute;
+    top: 120px;
+    left: 291px;
+    width: 33.3px;
+    height: 31.6px;
+}
+.linkedin-icon {
+    position: absolute;
+    top: 123px;
+    left: 337px;
+    width: 27.7px;
+    height: 30.1px;
+}
+.twitter-icon {
+    position: absolute;
+    top: 122px;
+    left: 377px;
+    width: 40px;
+    height: 30.9px;
+}
+.youtube-icon {
+    position: absolute;
+    top: 124px;
+    left: 424px;
+    width: 41px;
+    height: 27.8px;
+}
+.vector-parent {
+    width: 999px;
+    position: relative;
+    height: 974px;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    font-family: Poppins;
+    top: 200px;
+    left: 52px;
+}
+</style><div class="vector-parent"><img class="frame-child" alt="" src="web-thecartel/image/Rectangle 11.png"/><div class="djarot"><a class="d" href="https://elisen-theme.jkdevstudio.com/author/admin/" target="_blank"></a><span class="vegan-cooking-easy">D</span>jarot</div><div class="bitwitter"></div><img class="group-icon" alt="" src="Group.svg"/><div class="phasellus-viverra-nulla-container"><p class="phasellus-viverra-nulla">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nulla consequat massa quis enim.</p><p class="phasellus-viverra-nulla">Recent Posts:</p><ul class="travel"></ul><li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/travel/" target="_blank"></a><span class="vegan-cooking-easy">Travel</span></li><p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/maximizing-productivity-5-simple-strategies/" target="_blank"><span class="vegan-cooking-easy">Maximizing Productivity: 5 Simple Strategies</span></a><ul class="travel"></ul><li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/development/" target="_blank"></a><span class="vegan-cooking-easy">Development</span></li><p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/vegan-cooking-easy-and-delicious-recipes/" target="_blank"><span class="vegan-cooking-easy">Vegan Cooking: Easy and Delicious Recipes</span></a><ul class="travel"></ul><li class="travel1"><a class="travel2" href="https://elisen-theme.jkdevstudio.com/category/gadgets/" target="_blank"></a><span class="vegan-cooking-easy">Gadgets</span></li><p class="phasellus-viverra-nulla"></p><a class="travel2" href="https://elisen-theme.jkdevstudio.com/yoga-practices-for-mind-and-body/" target="_blank"><span class="vegan-cooking-easy">Yoga Practices for Mind and Body</span></a></div><div class="readmore"><div class="load-more">Load more</div></div><img class="facebook-icon" alt="" src="web-thecartel/image/FACEBOOK (1).png"/><img class="linkedin-icon" alt="" src="web-thecartel/image/LINKEDIN (1).png"/><img class="twitter-icon" alt="" src="web-thecartel/image/TWITTER.png"/><img class="youtube-icon" alt="" src="web-thecartel/image/YOUTUBE (1).png"/></div><style>.image-container {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        bottom: 825px;
+        left: 150px; 
+}
+</style><div class="image-container"><img src="/web-thecartel/image/image (47).png" alt="Image" width="100%" height="100%"/></div><!DOCTYPE html><html><head><style>body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  color: #BEBEBE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 200px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.footer .copyright {
+  font-size: 14px;
+}
+.footer .nav {
+  display: flex;
+  gap: 20px;
+}
+.footer .nav a {
+  color: #254B62;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer .nav a.active{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer .nav a:hover {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+</style></head><body><div class="footer"><div class="copyright">Copyright © 2024. All Right Reserved.</div><div class="nav"><a class="active" href="./index.html">Home</a><a href="./BLOG.html">Blog</a><a href="./_shop.html">Shop</a><a href="./_about.html">About</a></div></div></body></html></div></div></body></html>
