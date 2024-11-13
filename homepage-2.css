@@ -48,12 +48,12 @@
 /* Lebar penuh pada layar kecil */
 @media (max-width: 767px) {
     .column {
-        flex: 0 0 100%; /* Lebar penuh untuk kolom pada layar kecil */
+        flex: 0 0 100%;
         max-width: 100%;
     }
 
     .column-content {
-        flex: 0 0 100%; /* Lebar penuh untuk kolom pada layar kecil */
+        flex: 0 0 100%;
         max-width: 100%;
     }
 }
