@@ -1,0 +1,99 @@
+mixin 20(data)
+  style.
+    .b {
+      position: relative;
+      bottom: 93px;
+      left: 299px;
+      display: inline-block;
+      width: 75px;
+      height: 64px;
+    }
+    .button {
+      position: absolute;
+      top: 113px;
+      left: 297px;
+      border-radius: 8px;
+      background-color: #2c2c2c;
+      border: 1px solid #2c2c2c;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      font-size: 16px;
+      color: #f5f5f5;
+      font-family: Inter;
+    }
+    .image-icondua {
+      position: relative;
+      top: 14px;
+      left: 0px;
+      width: 196px;
+      height: 191px;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+    .parent {
+      width: 294px;
+      position: relative;
+      text-align: left;
+      font-size: 32px;
+      color: #fff;
+      font-family: Poppins;
+    }
+    /* Default positions for large screens */
+    .parent1 { top: 199px; right: 115px; height: 449px; }
+    .parent2 { left: 184px; bottom: 250px; height: 83px; }
+    .parent3 { left: 485px; bottom: 328px; height: 83px; }
+    .parent4 { left: 787px; bottom: 412px; height: 193px; }
+    .parent5 { left: 791px; bottom: 375px; height: 50px; }
+    .parent6 { left: 487px; bottom: 424px; height: 0px; }
+    .parent7 { left: 183px; bottom: 428px; height: 0px; }
+    .parent8 { left: -119px; bottom: 428px; height: 0px; }
+    .parent9 { top: -194px; right: 115px; height: 57px; }
+    .parent10 { left: 184px; bottom: 250px; height: 83px; }
+    .parent11 { left: 485px; bottom: 328px; height: 83px; }
+    .parent12 { left: 787px; bottom: 412px; height: 193px; }
+    .parent13 { left: 791px; bottom: 375px; height: 50px; }
+    .parent14 { left: 487px; bottom: 424px; height: 0px; }
+    .parent15 { left: 183px; bottom: 428px; height: 0px; }
+    .parent16 { left: -119px; bottom: 428px; height: 0px; }
+    .parent17 { left: 791px; bottom: 195px; height: 228px; }
+    .parent18 { left: 487px; bottom: 424px; height: 0px; }
+    .parent19 { left: 183px; bottom: 428px; height: 0px; }
+    .parent20 { left: -119px; bottom: 428px; height: 0px; }
+
+    /* Media query for medium screens (tablets) */
+    @media (max-width: 1024px) {
+      .parent { width: 220px; font-size: 28px; }
+      .parent1 { top: 50px; right: 80px; height: 400px; }
+      .parent2 { left: 180px; bottom: 200px; height: 70px; }
+      .parent3 { left: 400px; bottom: 300px; height: 70px; }
+      .parent4 { left: 700px; bottom: 350px; height: 180px; }
+      .parent5 { left: 600px; bottom: 300px; height: 40px; }
+      .parent6 { left: 320px; bottom: 380px; height: 0px; }
+      .parent7 { left: 120px; bottom: 380px; height: 0px; }
+      .parent8 { left: -90px; bottom: 380px; height: 0px; }
+    }
+
+    /* Media query for small screens (mobile) */
+    @media (max-width: 600px) {
+      .parent { width: 180px; font-size: 24px; }
+      .parent1 { top: 40px; right: 20px; height: 350px; }
+      .parent2 { left: 50px; bottom: 180px; height: 60px; }
+      .parent3 { left: 200px; bottom: 280px; height: 60px; }
+      .parent4 { left: 400px; bottom: 300px; height: 160px; }
+      .parent5 { left: 320px; bottom: 250px; height: 30px; }
+      .parent6 { left: 180px; bottom: 320px; height: 0px; }
+      .parent7 { left: 40px; bottom: 320px; height: 0px; }
+      .parent8 { left: -60px; bottom: 320px; height: 0px; }
+    }
+
+  each item, index in data
+    .parent(class=`parent${index + 1}`)
+      b.b=item.value
+      .button
+        b.button1 ADD+
+      img.image-icondua(alt='', src=item.image)
+
